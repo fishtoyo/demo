@@ -1,111 +1,89 @@
-﻿/* CSS Document */
-@charset "utf-8";
+﻿@charset "utf-8";
+/* ==========================================
+ * @ Author   Fish
+ * @ Website  http://fishtoyo.github.io/website/
+========================================== */
+
 
 /* ==========================================
-   Common
+   Tag Reset
 ========================================== */
-body {
-	padding: 0;
+body, form, input, textarea, select {
 	margin: 0;
-	font-size: 14px;
-	font-family: "微軟正黑體";
-}
-img {
-	vertical-align: top;
-}
-.tabSet, .tabSet th, .tabSet td {
 	padding: 0;
-	border: 0;
-	border-spacing: 0;
-	border-collapse: collapse;
+	color: #333;
+	font-family: 'Verdana', '微軟正黑體';
 }
+body {
+	background: url('../images/bg.png');
+}
+img { border: 0; text-decoration: none;}
+textarea { resize: none;}
+
+
+/* ==========================================
+   Common Style
+========================================== */
+.displayNone {
+	display: none;
+}
+/* Clear */
 .clearBoth {
 	height: 0;
 	font-size: 0;
 	line-height: 0;
 	clear: both;
 }
+.clearGroup:before, .clearGroup:after { 
+   content: "";
+   display: table; 
+}
+.clearGroup:after {
+   clear: both; 
+}
+.clearGroup { 
+   zoom: 1; /* IE6&7 */ 
+}
+/* Table */
+.tabSet, .tabSet th, .tabSet td {
+	padding: 0;
+	border: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.tabSet input, .tabSet label, .tabSet select {
+	vertical-align: middle;
+}
+/* Ul */
+.ulSet {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* Placeholder */
+::-webkit-input-placeholder {	color: #000;}
+::-moz-placeholder { color: #000; opacity: 1;}
+:-ms-input-placeholder { color: #000;}
+:-moz-placeholder { color: #000;}
+/* animate */
+.animate {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
 
 /* ==========================================
-   Page
+   Wrap
 ========================================== */
-.main {
-	margin: 30px auto;
-	width: 980px;
+.mainWrap {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1000px;
+  overflow: hidden;
 }
-.present {
-	color: #484848;
-	background: #FFDDDE;
-	border: 1px solid #ff999c;
-	border-radius: 5px;
-}
-.topTitle {
-  margin: 10px 40px;
-  padding: 10px;
-  color: #FFF;
-  font-weight: 900;
-  text-align: center;
-  background: #FF0074;
-}
-.container {
-	padding: 0 40px 10px;
-}
-.itemBox {
-	margin: 10px 0;
-	float: left;
-	width: 49%;
-}
-.itemBox:nth-child(even) {
-	float: right;
-}
-.wrap {
-	border: 2px #999 solid;
-}
-.imgArea {
-	text-align: center;
-	height: 100px;
-}
-.midArea {
-	padding: 5px;
-	border-top: 1px #999 solid;
-	border-bottom: 1px #999 solid;
-}
-.coin {
-	text-align: right;
-}
-.tabSet {
-	background-color: #FFEBF3;
-}
-.tabSet tr:nth-child(odd) {
-	background-color: #FFF;
-}
-.tabSet th {
-	height: 30px;
-	font-weight: normal;
-	background: url('../images/title.png') repeat-x;
-	border-bottom: 1px #999 dashed;
-	border-right: 1px #FC8BB9 solid;
-	border-left: 1px #FC8BB9 solid;
-}
-.tabSet .right {
-}
-.tabSet tr td:nth-child(2),
-.tabSet tr th:nth-child(2) {
-	width: 130px;
-	text-align: center;
-	border-left: none;
-}
-.tabSet td {
-	padding: 5px;
-	line-height: 20px;
-	border-bottom: 1px #999 dashed;
-	border-right: 1px #FC8BB9 solid;
-	border-left: 1px #FC8BB9 solid;
-}
-.downArea {
-	padding: 5px 0 10px;
-	height: 40px;
-	text-align: center;
-}
+
 
 /*
