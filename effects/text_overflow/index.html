@@ -30,41 +30,56 @@
 <body>
 
 <div class="mainWrap">
-  <div class="titleBig">刪節號樣式 - 單行</div>
+  <div class="titleBig">文字刪節號 - 單行</div>
 
   <!-- Single-line Ellipsis -->
   <div class="titleSmall">純CSS寫法</div>
-  <div class="explain">單行文字要進行刪節號樣式時，使用CSS的 <span class="import radius-4">white-space</span> 跟 <span class="import radius-4">text-overflow</span> 屬性，搭配 <span class="import radius-4">overflow</span> 即可。</div>
+  <div class="explain">使用CSS的 <span class="import radius-4">white-space</span> 跟 <span class="import radius-4">text-overflow</span> 屬性，搭配 <span class="import radius-4">overflow</span> 即可。</div>
 
-  <!-- CSS -->
-  <div class="codeTitle"><span class="titleCode">CSS</span> <span class="dec"><!-- 以下程式碼放置於 CSS樣式表 --></span></div>
-  <div class="codeBox">
-    <span class="class_className">.single_line</span> { <br>
-    <span class="empty-10"></span><span class="class_property">width</span>: <span class="class_number">200px</span>; <span class="comment">// 指定寬度為200px</span><br>
-    <span class="empty-10"></span><span class="class_property">overflow</span>: <span class="class_value">hidden</span>; <span class="comment">// 若內容溢出指定的寬/高，則隱藏溢出的內容</span><br>
-    <span class="empty-10"></span><span class="class_property">white-space</span>: <span class="class_value">nowrap</span>; <span class="comment">&nbsp;// 文字不換行</span><br>
-    <span class="empty-10"></span><span class="class_property">text-overflow</span>: <span class="class_value">ellipsis</span>; <span class="comment">// 溢出時的樣式設定為 ellipsis (...)</span><br>
-    }
-  </div>
-
-  <!-- BODY -->
-  <div class="codeTitle"><span class="titleCode">Body</span> <span class="dec">以下程式碼放置於 &lt;body&gt;...&lt;/body&gt;</span></div>
-  <div class="codeBox">
-    <span class="body_tag">&lt;div</span> <span class="body_property">class=</span><span class="body_value">"single_line"</span><span class="body_tag">&gt;</span>
-    <br>
-
-    <span class="empty-10"></span>單行文字刪節號樣式測試123單行文字刪節號樣式測試456單行文字刪節號樣式測試123單行文字刪節號樣式測試789
-
-    <br>
-    <span class="body_tag">&lt;/div&gt;</span>
-  </div>
-
-  <!-- EXAMPLE -->
+  <!-- Demo -->
   <div class="codeTitle"><span class="titleCode">Demo</span></div>
   <div class="codeBox">
     <div class="single_line">
       單行文字刪節號樣式測試123單行文字刪節號樣式測試456單行文字刪節號樣式測試123單行文字刪節號樣式測試789
     </div>
+  </div>
+
+  <div class="gap"></div>
+
+  <!-- CSS -->
+  <div class="codeTitle"><span class="titleCode">CSS</span> <span class="dec"><!-- 以下程式碼放置於 CSS樣式表 --></span></div>
+  <div class="codeBox">
+    <table class="tabSet">
+      <tr>
+        <td>
+          <span class="class_className">.single_line</span> { <br>
+          <span class="empty-10"></span><span class="class_property">width</span>: <span class="class_number">200px</span>; <span class="comment">// 寬度200px</span><br>
+          <span class="empty-10"></span><span class="class_property">overflow</span>: <span class="class_value">hidden</span>; <span class="comment">// 若內容溢出指定的寬/高，則隱藏溢出的內容</span><br>
+          <span class="empty-10"></span><span class="class_property">white-space</span>: <span class="class_value">nowrap</span>; <span class="comment">&nbsp;// 文字不換行</span><br>
+          <span class="empty-10"></span><span class="class_property">text-overflow</span>: <span class="class_value">ellipsis</span>; <span class="comment">// 溢出時的樣式設定為 ellipsis (...)</span><br>
+          }
+        </td>
+      </tr>
+    </table>
+    
+  </div>
+
+  <!-- BODY -->
+  <div class="codeTitle"><span class="titleCode">Body</span> <span class="dec">以下程式碼放置於 &lt;body&gt;...&lt;/body&gt;</span></div>
+  <div class="codeBox">
+    <table class="tabSet">
+      <tr>
+        <td>
+          <span class="body_tag">&lt;div</span> <span class="body_property">class=</span><span class="body_value">"single_line"</span><span class="body_tag">&gt;</span>
+          <br>
+
+          <span class="empty-10"></span>單行文字刪節號樣式測試123單行文字刪節號樣式測試456單行文字刪節號樣式測試123單行文字刪節號樣式測試789
+
+          <br>
+          <span class="body_tag">&lt;/div&gt;</span>
+        </td>
+      </tr>
+    </table>
   </div>
 
   <!-- Import -->
