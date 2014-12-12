@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="Fish's Website | Image Tabs">
+<meta name="description" content="Fish's Website | Image Tabs">
+<title>Fish's Website | Image Tabs</title>
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+<style>
+/* =============================================
+ * @ Subject  Single-line Ellipsis
+ * @ Date     2014.12.12
+ * @ Author   Fish
+ * @ Website  http://fishtoyo.github.io/website/
+================================================ */
+.single_line {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="mainWrap">
+  <div class="titleBig">刪節號樣式 - 單行</div>
+
+  <!-- Single-line Ellipsis -->
+  <div class="titleSmall">純CSS寫法</div>
+  <div class="explain">單行文字要進行刪節號樣式時，使用CSS的 <span class="import radius-4">white-space</span> 跟 <span class="import radius-4">text-overflow</span> 屬性，搭配 <span class="import radius-4">overflow</span> 即可。</div>
+
+  <!-- CSS -->
+  <div class="codeTitle"><span class="titleCode">CSS</span> <span class="dec"><!-- 以下程式碼放置於 CSS樣式表 --></span></div>
+  <div class="codeBox">
+    <span class="class_className">.single_line</span> { <br>
+    <span class="empty-10"></span><span class="class_property">width</span>: <span class="class_number">200px</span>; <span class="comment">// 指定寬度為200px</span><br>
+    <span class="empty-10"></span><span class="class_property">overflow</span>: <span class="class_value">hidden</span>; <span class="comment">// 若內容溢出指定的寬/高，則隱藏溢出的內容</span><br>
+    <span class="empty-10"></span><span class="class_property">white-space</span>: <span class="class_value">nowrap</span>; <span class="comment">&nbsp;// 文字不換行</span><br>
+    <span class="empty-10"></span><span class="class_property">text-overflow</span>: <span class="class_value">ellipsis</span>; <span class="comment">// 溢出時的樣式設定為 ellipsis (...)</span><br>
+    }
+  </div>
+
+  <!-- BODY -->
+  <div class="codeTitle"><span class="titleCode">Body</span> <span class="dec">以下程式碼放置於 &lt;body&gt;...&lt;/body&gt;</span></div>
+  <div class="codeBox">
+    <span class="body_tag">&lt;div</span> <span class="body_property">class=</span><span class="body_value">"single_line"</span><span class="body_tag">&gt;</span>
+    <br>
+
+    <span class="empty-10"></span>單行文字刪節號樣式測試123單行文字刪節號樣式測試456單行文字刪節號樣式測試123單行文字刪節號樣式測試789
+
+    <br>
+    <span class="body_tag">&lt;/div&gt;</span>
+  </div>
+
+  <!-- EXAMPLE -->
+  <div class="codeTitle"><span class="titleCode">Demo</span></div>
+  <div class="codeBox">
+    <div class="single_line">
+      單行文字刪節號樣式測試123單行文字刪節號樣式測試456單行文字刪節號樣式測試123單行文字刪節號樣式測試789
+    </div>
+  </div>
+
+  <!-- Import -->
+  <div class="importBox">
+    <div class="title">寬度設定</div>
+    若不指定寬度，則會以父層區塊的寬度為基準
+  </div>
+
+</div>
+
+</body>
+</html>

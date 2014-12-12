@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="Fish's Website | Image Tabs">
+<meta name="description" content="Fish's Website | Image Tabs">
+<title>Fish's Website | Image Tabs</title>
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+<style>
+/* =============================================
+ * @ Subject  Multi-line Ellipsis
+ * @ Date     2014.12.12
+ * @ Author   Fish
+ * @ Website  http://fishtoyo.github.io/website/
+================================================ */
+.ellipsis {
+  width: 100px;
+  height: 90px;
+  overflow: hidden;
+}
+</style>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="../../js/plugins/jQuery/jquery-1.8.3.min.js"></script>
+<script src="../../js/ellipsis.js"></script>
+<script>
+jQuery(document).ready(function() {
+
+  // Multi-line Ellipsis
+  jQuery('.ellipsis').ellipsis();
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="mainWrap">
+  <div class="titleBig">刪節號樣式 - 多行</div>
+
+  <!-- Multi-line Ellipsis -->
+  <div class="titleSmall">搭配jQuery則可將刪節號用於文字多行</div>
+  <div class="explain">此範例需要使用 <a href="../../js/ellipsis.js" class="importLink radius-4 animate">ellipsis.js</a> 文件。</div>
+
+  <!-- Script -->
+  <div class="codeTitle"><span class="titleCode">引入檔案</span></div>
+  <div class="codeBox">
+    <span class="body_tag">&lt;script</span> <span class="body_property">src=</span><span class="body_value">"jquery.js"</span><span class="body_tag">&gt;</span><span class="body_tag">&lt;/script&gt;</span> <span class="comment m0">&lt;!-- jQuery 主程式 --&gt;</span><br>
+    <span class="body_tag">&lt;script</span> <span class="body_property">src=</span><span class="body_value">"ellipsis.js"</span><span class="body_tag">&gt;</span><span class="body_tag">&lt;/script&gt;</span>
+  </div>
+
+  <!-- jQuery -->
+  <div class="codeTitle"><span class="titleCode">jQuery</span></div>
+  <div class="codeBox">
+    jQuery(<span class="js_className">'.ellipsis'</span>).ellipsis();
+  </div>
+
+  <!-- CSS -->
+  <div class="codeTitle"><span class="titleCode">CSS</span></div>
+  <div class="codeBox">
+    <span class="class_className">.ellipsis</span> { <br>
+    <span class="empty-10"></span><span class="class_property">width</span>: <span class="class_number">100px</span>; <span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 設定一個區塊寬度為100px</span><br>
+    <span class="empty-10"></span><span class="class_property">height</span>: <span class="class_number">90px</span>; <span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 設定一個區塊寬度為100px</span><br>
+    <span class="empty-10"></span><span class="class_property">overflow</span>: <span class="class_value">hidden</span>; <span class="comment">// 若內容溢出指定的寬/高，則隱藏溢出的內容</span><br>
+    }
+  </div>
+
+  <!-- BODY -->
+  <div class="codeTitle"><span class="titleCode">Body</span> <span class="dec">以下程式碼放置於 &lt;body&gt;...&lt;/body&gt;</span></div>
+  <div class="codeBox">
+    <span class="body_tag">&lt;div</span> <span class="body_property">class=</span><span class="body_value">"ellipsis multiline"</span><span class="body_tag">&gt;</span>
+    <br>
+
+    <span class="empty-10"></span>多行文字刪節號樣式測試123多行文字刪節號樣式測試456多行文字刪節號樣式測試123多行文字刪節號樣式測試789
+    
+    <br>
+    <span class="body_tag">&lt;/div&gt;</span>
+  </div>
+
+  <!-- EXAMPLE -->
+  <div class="codeTitle"><span class="titleCode">Demo</span></div>
+  <div class="codeBox">
+    <div class="ellipsis multiline">
+      多行文字刪節號樣式測試123多行文字刪節號樣式測試456多行文字刪節號樣式測試123多行文字刪節號樣式測試789
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

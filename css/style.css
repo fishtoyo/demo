@@ -8,17 +8,33 @@
 /* ==========================================
    Tag Reset
 ========================================== */
+body, html {
+	height: 100%;
+}
 body, form, input, textarea, select {
 	margin: 0;
 	padding: 0;
 	color: #333;
-	font-family: 'Verdana', '微軟正黑體';
+	font-family: 'Open Sans', 'Verdana', '微軟正黑體';
 }
 body {
 	background: url('../images/bg.png') fixed;
 }
-img { border: 0; text-decoration: none;}
-textarea { resize: none;}
+a {
+	color: #fff;
+	text-decoration: none;
+	/* text-shadow: 0 0 1px #fff; */
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	border: 0;
+	text-decoration: none;
+}
+textarea {
+	resize: none;
+}
 
 
 /* ==========================================
@@ -80,10 +96,215 @@ textarea { resize: none;}
 ========================================== */
 .mainWrap {
   margin: 0 auto;
-  padding: 50px 0;
-  width: 1000px;
-  overflow: hidden;
+  padding: 30px;
+  width: 940px;
+  height: 100%;
+  background-color: #fff;
+}
+.titleBig {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	font-size: 24px;
+  line-height: 28px;
+	border-bottom: 1px solid #f1f1f1;
+}
+.titleSmall {
+	margin-bottom: 10px;
+	font-size: 18px;
+  line-height: 22px;
+}
+.titleCode {
+	color: #de5e59;
+	font-size: 15px;
+	text-align: center;
+	line-height: 22px;
+}
+.explain {
+	margin-bottom: 20px;
+	font-size: 14px;
+  line-height: 20px;
+}
+.dec {
+	font-size: 13px;
+	color: #aaa;
+}
+.import {
+	padding: 0 5px;
+	color: #b9000f;		
+	background-color: #faf4f6;
+}
+.importLink {
+	padding: 0 5px;
+	background-color: #de5e59;
+}
+.importLink:hover {
+	text-decoration: none;
+	background-color: #00ac89;
+}
+.codeTitle {
+	padding: 20px 0 5px;
+}
+.codeBox {
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	font-size: 13px;
+	line-height: 22px;
+	text-shadow: 0 0 1px #fff;
+	background-color: #f8f8f8;
+	border: solid 1px #e7e7ed;
+	
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-box-shadow: inset 0 0 4px #fff;
+	-moz-box-shadow: inset 0 0 4px #fff;
+	box-shadow: inset 0 0 4px #fff;
+}
+.importBox {
+	position: relative;
+	margin: 30px 0 0;
+	padding: 15px 25px;
+	font-size: 13px;
+	border: solid 1px #f1f1f1;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.importBox:before {
+	pointer-events: none;
+  content: '';
+  box-sizing: border-box;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+	height: 100%;
+	background-color: #de5e59;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.importBox .title {
+	margin-bottom: 5px;
+	color: #de5e59;
+	font-size: 18px;
 }
 
+/* ==========================================
+   Radius
+========================================== */
+.radius-4 {
+	display: inline-block;
+	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.empty-10 {
+	display: inline-block;
+	width: 10px;
+}
+.spaceH30 {
+	height: 50px;
+}
+
+/* ==========================================
+   Color
+========================================== */
+.class_className {
+	color: #00ac89;
+}
+.class_property {
+	color: #807fe9;
+}
+.class_value {
+	color: #cf23f9;
+}
+.class_number {
+	color: #de5e59;
+}
+
+.js_className {
+	color: #de5e59;
+}
+.js_property {
+	color: #3797cd;
+}
+.js_value {
+	color: #065a94;
+}
+
+.body_tag {
+	color: #065a94;
+}
+.body_property {
+	color: #3797cd;
+}
+.body_value {
+	color: #d8575e;
+}
+
+.comment {
+	display: inline-block;
+	margin-left: 20px;
+	color: #888;
+}
+.comment.m0 {
+	margin: 0;
+}
+
+/* ==========================================
+   Header
+========================================== */
+#header {
+	text-align: center;
+}
+#header h1 {
+	color: #fff;
+	font-size: 28px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+
+/* ==========================================
+   Page
+========================================== */
+#page {
+
+}
+#page .box {
+	float: left;
+	margin: 10px;
+	height: 64px;
+	overflow: hidden;
+	background-color: rgba(255,255,255,.5);
+}
+#page .box .date {
+	float: left;
+	padding: 10px;
+	text-align: center;
+	line-height: 22px;
+}
+#page .box .day {
+	color: #fff;
+	font-size: 22px;
+}
+#page .box .month {
+	color: #ddd;
+	font-size: 13px;
+}
+#page .box .title {
+	float: left;
+	padding: 10px 20px;
+	height: 100%;
+	line-height: 44px;
+	border-left: 2px solid #000;
+}
 
 /*
