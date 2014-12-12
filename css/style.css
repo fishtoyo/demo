@@ -15,7 +15,7 @@ body, form, input, textarea, select {
 	font-family: 'Verdana', '微軟正黑體';
 }
 body {
-	background: url('../images/bg.png');
+	background: url('../images/bg.png') fixed;
 }
 img { border: 0; text-decoration: none;}
 textarea { resize: none;}
