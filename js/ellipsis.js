@@ -1,38 +1,49 @@
 /* ==========================================
- * @ Subject  Multi-line Ellipsis
- * @ Date     2013.04.15
+ * @ Subject    Multi-line Ellipsis
+ * @ Last Edit  Fish
+ * @ Date       2014.12.12
 ========================================== */
 
-(function($) {
-  $.fn.ellipsis = function() {
-    return this.each(function() {
-      var el = $(this);
+;(function($) {
+  $.fn.ellipsis = function(options) {
+    var setting = {
+          height: 40 // maxHeight
+        },
+        obj = $.extend(setting, options);
 
-      if(el.css("overflow") == "hidden") {
-        var text = el.html();
-        var multiline = el.hasClass('multiline');
-        var t = $(this.cloneNode(true))
-          .hide()
-          .css('position', 'absolute')
-          .css('overflow', 'visible')
-          .width(multiline ? el.width() : 'auto')
-          .height(multiline ? 'auto' : el.height());
+    $(this).each(function() {
+        var ele = $(this), divH = obj.height;
 
-        el.after(t);
+        if(ele.css("overflow") == "hidden") {
+          var text = ele.html(),
+              multiline = ele.hasClass('multiline');
 
-        function height() { return t.height() > el.height(); };
-        function width() { return t.width() > el.width(); };
+          var copyDiv = $(this.cloneNode(true))
+            .hide()
+            .css({
+              'position': 'absolute',
+              'overflow': 'visible',
+              'width': multiline ? ele.width() : 'auto',
+              'height': multiline ? 'auto' : divH
+            });
 
-        var func = multiline ? height : width;
+          ele.after(copyDiv);
+          
+          function height() { return copyDiv.height() > divH; };
+          function width() { return copyDiv.width() > ele.width(); };
 
-        while (text.length > 0 && func()) {
-          text = text.substr(0, text.length - 1);
-          t.html(text + "...");
+          var ratio = multiline ? height : width;
+
+          while (text.length > 0 && ratio()) {
+            text = text.substr(0, text.length - 1);
+            copyDiv.html(text + "...");
+          }
+
+          ele.html(copyDiv.html());
+          copyDiv.remove();
         }
+      });
 
-        el.html(t.html());
-        t.remove();
-      }
-    });
+    return this;
   };
 })(jQuery);

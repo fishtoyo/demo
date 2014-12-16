@@ -17,7 +17,6 @@
 ================================================ */
 .ellipsis {
   width: 200px;
-  height: 90px;
   overflow: hidden;
 }
 </style>
@@ -30,7 +29,9 @@
 jQuery(document).ready(function() {
 
   // Multi-line Ellipsis
-  jQuery('.ellipsis').ellipsis();
+  jQuery('.ellipsis').ellipsis({
+    height: 90
+  });
 
 });
 </script>
@@ -69,7 +70,9 @@ jQuery(document).ready(function() {
           <br>
           </span>jQuery(<span class="body_property">document</span>).ready(<span class="body_property">function</span>() {<br>
             <span class="empty-10"></span><span class="comment">// Multi-line Ellipsis</span><br>
-            <span class="empty-10"></span>jQuery(<span class="js_className">'.ellipsis'</span>).ellipsis();<br>
+            <span class="empty-10"></span>jQuery(<span class="js_className">'.ellipsis'</span>).ellipsis({<br>
+              <span class="empty-25"></span><span class="js_value">height</span>: <span class="class_number">90</span> <span class="comment">// 指定區塊內容高度</span><br>
+            <span class="empty-10"></span>});<br>
           });<br>
           <span class="body_tag">&lt;/script&gt;</span>
         </td>
@@ -85,7 +88,6 @@ jQuery(document).ready(function() {
         <td>
           <span class="class_className">.ellipsis</span> { <br>
           <span class="empty-10"></span><span class="class_property">width</span>: <span class="class_number">200px</span>; <span class="comment">// 寬度200px</span><br>
-          <span class="empty-10"></span><span class="class_property">height</span>: <span class="class_number">90px</span>; <span class="comment">// 高度90px</span><br>
           <span class="empty-10"></span><span class="class_property">overflow</span>: <span class="class_value">hidden</span>; <span class="comment">// 若內容溢出指定的寬/高，則隱藏溢出的內容</span><br>
           }
         </td>
