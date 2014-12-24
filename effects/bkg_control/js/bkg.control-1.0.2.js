@@ -1,11 +1,12 @@
 /* ==========================================
    配合客戶背景圖片自行上傳
 
- * @ Author	  Fish
- * @ Date			2014.12.02 
- * @ Version  1.0.2
+ * @ Author		Fish
+ * @ Build		2014.12.02 
+ * @ Version	1.0.2 (2014.12.24)
 
  * @ color    背景底色
+ * @ opacity  RGB與透明度
  * @ imgUrl	 	圖片路徑
  * @ position 對齊方式
  * @ repeat   排列方式
@@ -20,10 +21,10 @@
 
 ;(function ($) {
 	
-	$.fn.resetBackground = function (options) { 
+	$.fn.bkgControl = function (options) { 
 		
 		var defaultVal = {
-    	color: '#fff',
+    	color: '#fff', // IE8 不支持 RGB與透明度 寫法，所以一定要將色碼16進位也一併放置此參數
     	opacity: 'rgba(255,255,255,0)',
 			imgUrl: 'none',
 			position: 0,
