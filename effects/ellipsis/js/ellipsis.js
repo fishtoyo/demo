@@ -33,9 +33,14 @@
           function width() { return copyDiv.width() > ele.width(); };
 
           var ratio = multiline ? height : width;
-
+          
+          var i = 0;
           while (text.length > 0 && ratio()) {
             text = text.substr(0, text.length - 1);
+
+            console.log(i, text);
+            i++;
+
             copyDiv.html(text + "...");
           }
 

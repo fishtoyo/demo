@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="Fish's Website | Image Tabs">
+<meta name="description" content="Fish's Website | Image Tabs">
+<title>Fish's Website | Image Tabs</title>
+<style>
+.zxx_text_overflow_1{width:27em;}
+.zxx_text_overflow_2{width:400px; height: 50px}
+</style>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="../../js/plugins/jQuery/jquery-1.8.3.min.js"></script>
+<script src="../../js/ellipsis2.js"></script>
+<script>
+jQuery(document).ready(function() {
+
+  $(".zxx_text_overflow_1").wordLimit();
+  $(".zxx_text_overflow_2").wordLimit();
+  $(".zxx_text_overflow_3").wordLimit(24);
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="zxx_out_box">
+    <div class="zxx_in_box">
+        <div class="zxx_header">
+            <a href="http://www.zhangxinxu.com/">
+                <img class="l" src="http://www.zhangxinxu.com/wordpress/wp-content/themes/default/images/index_logo.gif" />
+            </a>
+            <span class="zxx_author_time">by zhangxinxu 2009-09-05 19:01</span>
+        </div>
+        <h3 class="zxx_title">关于文字内容溢出用点点点(...)省略号表示</h3>
+        <div class="zxx_main_con">
+      <div class="zxx_test_list">
+              <h4>1.em单位定宽</h4>
+                <div class="zxx_text_overflow_1">这是一段测试文字，主要是用来测试文字溢出后是否会用省略号显示。</div>
+                <div class="zxx_code">
+                  <xmp>CSS：.zxx_text_overflow_1{width:27em;}
+
+HTML：<div class="zxx_text_overflow_1">这是一段测试文字，主要是用来测试文字溢出后是否会用省略号显示。</div>
+
+JS：$(".zxx_text_overflow_1").wordLimit();</xmp>
+                </div>
+            </div> 
+            <div class="zxx_test_list">
+              <h4>2.px单位定宽</h4>
+                <div class="zxx_text_overflow_2">这是一段测试文字，主要是用来测试文字溢出后是否会用省略号显示。</div>
+                <div class="zxx_code">
+                  <xmp>CSS：.zxx_text_overflow_2{width:400px;}
+
+HTML：<div class="zxx_text_overflow_2">这是一段测试文字，主要是用来测试文字溢出后是否会用省略号显示。</div>
+
+JS：$(".zxx_text_overflow_2").wordLimit();</xmp>
+                </div>
+            </div>
+            <div class="zxx_test_list">
+              <h4>3.限定字符个数</h4>
+                <div class="zxx_text_overflow_3">这是一段测试文字，主要是用来测试文字溢出后是否会用省略号显示。</div>
+                <div class="zxx_code">
+                  <xmp>CSS：无
+
+HTML：<div class="zxx_text_overflow_3">这是一段测试文字，主要是用来测试文字溢出后是否会用省略号显示。</div>
+
+JS：$(".zxx_text_overflow_3").wordLimit(24);</xmp>
+                </div>
+            </div>           
+        </div>
+        <div class="zxx_footer">
+            &copy;<a href="http://www.zhangxinxu.com/">张鑫旭-鑫空间-鑫生活</a>
+            |
+            <a href="http://www.zhangxinxu.com/wordpress/?p=230">该篇相关文章</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+</body>
+</html>

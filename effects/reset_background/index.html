@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="Fish's Website | Reset-Background">
+<meta name="description" content="Fish's Website | Reset-Background">
+<title>Fish's Website | Reset-Background</title>
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+<!-- Farbtastic -->
+<link href="css/farbtastic.css" rel="stylesheet">
+<!-- jRange -->
+<link href="css/jquery.range.css" rel="stylesheet">
+<style>
+/* =============================================
+ * @ Subject  Reset-Background
+ * @ Date     2014.12.12
+ * @ Author   Fish
+ * @ Website  http://fishtoyo.github.io/website/
+================================================ */
+input {
+  text-align: center;
+}
+/* 左側 */
+.leftArea {
+  float: left;
+  padding: 20px;
+}
+#colorpicker {
+  margin: 0 0 10px 20px;
+}
+#range {
+  padding: 10px 0 0 25px;
+}
+/* 中間色碼 */
+#rgbArea {
+  margin: 42px 0 0 10px;
+}
+#rgbArea th {
+  padding-right: 5px;
+  text-align: right;
+  line-height: 40px;
+}
+#rgbArea input {
+  padding: 4px 10px;
+  width: 70px;
+  border: 1px solid #ccc;
+}
+#rgbArea .opacity {
+  padding-top: 30px;
+}
+/* 右側上傳圖片/選擇圖片 */
+#imgTab {
+  margin: 42px 0 0 10px;
+}
+#imgTab th {
+  padding-right: 5px;
+  text-align: right;
+  line-height: 40px;
+}
+.ulSet {
+  margin: 10px 0;
+}
+.ulSet li {
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+.btnArea {
+  padding: 0 0 20px;
+  text-align: center;
+}
+.submit {
+  width: 200px;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+</style>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="../../js/plugins/jQuery/jquery-1.8.3.min.js"></script>
+<script src="js/reset.background-1.0.2.js"></script>
+<!-- Farbtastic -->
+<script src="js/farbtastic.js"></script>
+<!-- jRange -->
+<script src="js/jquery.range-min.js"></script>
+<script>
+//16進位轉RGB
+function hexTorgb(v){
+ if (/^[0-9A-F]{3}$|^[0-9A-F]{6}$/.test(v.toUpperCase())) {
+   if (v.length == 3) {
+     v = v.match(/[0-9A-F]/g);
+     v = v[0] + v[0] + v[1] + v[1] + v[2] + v[2];
+     this.value = v;
+   }
+   var r = parseInt(v.substr(0, 2), 16);
+   var g = parseInt(v.substr(2, 2), 16);
+   var b = parseInt(v.substr(4, 2), 16);
+   return [r, g, b];
+ }
+ return v;
+}
+
+jQuery(document).ready(function() {
+
+  jQuery('body').css({
+    'backgroundImage': 'url(images/03.png)'
+  });
+
+  // 色碼選擇器
+  jQuery('#colorpicker').farbtastic('#color');
+
+  // 選完顏色之後要進行16進位轉RGB
+  var hex = '12345';
+  jQuery('#colorpicker').on('load mouseup', function(){
+    hex = jQuery('#color').val().replace('#', '');
+    jQuery('#colorR').val(hexTorgb(hex)[0]);
+    jQuery('#colorG').val(hexTorgb(hex)[1]);
+    jQuery('#colorB').val(hexTorgb(hex)[2]);
+  });
+
+  // 範圍選擇器
+  jQuery('.single-slider').jRange({
+    from: 0,
+    to: 100,
+    step: 1,
+    scale: [0,50,100],
+    format: '%s',
+    width: 175,
+    showLabels: true
+  });
+
+  // 選完範圍要代入數字(mouseup 這個用法要修改)
+  jQuery('.back-bar').on('mouseup', function(){
+    jQuery('#opacity').val(jQuery('.single-slider').val());
+  });
+
+  // 預設圖片
+  var $imgChoose = 'images/transparent.gif';
+
+  // 送出之後進行背景修改
+  jQuery('input[type=submit]').on('click', function(){
+    var $position = parseInt(jQuery("#position :selected").val());
+    var $repeat = parseInt(jQuery("#repeat :selected").val());
+    $imgChoose = jQuery('input[name=img_choose]:checked').val();
+
+    jQuery('.mainWrap').resetBackground({
+      color: jQuery('#color').val(),
+      opacity: 'rgba('+ hexTorgb(hex)[0] +','+ hexTorgb(hex)[1] +', '+ hexTorgb(hex)[2] +','+ jQuery('#opacity').val()*0.01 +')',
+      imgUrl: 'url('+ $imgChoose +')',
+      position: $position,
+      repeat: $repeat
+    });
+  });
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="mainWrap">
+  <div class="titleBig">控制背景圖片樣式</div>
+
+  <!-- Multi-line Ellipsis -->
+  <div class="titleSmall">搭配後端設定讓客戶自行修改背景樣式</div>
+  <div class="explain">此範例需要使用 <a href="https://github.com/fishtoyo/website/blob/gh-pages/js/reset.background-1.0.2.js" class="importLink radius-4 animate" title="reset.background-1.0.2.js">reset.background-1.0.2.js</a> 文件。</div>
+
+  <!-- Demo -->
+  <div class="codeTitle"><span class="titleCode">後台操作範例</span></div>
+  <div class="codeBox">
+  
+    <div class="leftArea">
+      <div id="colorpicker"></div>
+      <div id="range">
+        <input class="single-slider" type="hidden" value="100" style="display: none;">
+      </div>
+    </div>
+
+    <div class="leftArea">
+      <table class="tabSet" id="rgbArea">
+        <tr>
+          <th>色碼:</th>
+          <td><input type="text" name="color" value="#123456" id="color"></td>
+        </tr>
+        <tr>
+          <th>R:</th>
+          <td><input type="text" name="color" value="18" id="colorR" class="rgbStyle"></td>
+        </tr>
+        <tr>
+          <th>G:</th>
+          <td><input type="text" name="color" value="52" id="colorG" class="rgbStyle"></td>
+        </tr>
+        <tr>
+          <th>B:</th>
+          <td><input type="text" name="color" value="86" id="colorB" class="rgbStyle"></td>
+        </tr>
+        <tr>
+          <th>透明度:</th>
+          <td><input name="" type="text" value="100" id="opacity"> %</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td class="opacity"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="leftArea">
+      <table class="tabSet" id="imgTab">
+        <tr>
+          <th>上傳圖片：</th>
+          <td><input name="" type="file" value=""></td>
+        </tr>
+        <tr>
+          <th>選擇圖片：</th>
+          <td>
+            <ul class="ulSet" class="imgChoose">
+              <li>
+                <input name="img_choose" type="radio" value="images/transparent.gif" id="img0" checked><br>
+                <label for="img0">無圖片</label>
+              </li>
+              <li>
+                <input name="img_choose" type="radio" value="images/01.jpg" id="img1"><br>
+                <label for="img1"><img src="images/01.jpg" width="30" alt=""></label>
+              </li>
+              <li>
+                <input name="img_choose" type="radio" value="images/02.jpg" id="img2"><br>
+                <label for="img2"><img src="images/02.jpg" width="30" alt=""></label>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>對齊方式：</th>
+          <td>
+            <select name="" id="position">
+              <option value="0">左上</option>
+              <option value="1">左下</option>
+              <option value="2">右上</option>
+              <option value="3">右下</option>
+              <option value="4">水平垂直置中</option>
+              <option value="5">水平置上</option>
+              <option value="6">水平置下</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>排列方式：</th>
+          <td>
+            <select name="" id="repeat">
+              <option value="0">重複</option>
+              <option value="1">不重複</option>
+              <option value="2">水平延伸</option>
+              <option value="3">垂直延伸</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="clearBoth"></div>
+
+    <div class="btnArea">
+      <input name="" type="submit" value="確定送出" class="submit">
+    </div>
+  </div>
+
+  <div class="gap"></div>
+
+  <!-- Import -->
+  <div class="importBox">
+    <div class="title">寬度設定</div>
+    若不指定寬度，則會以父層區塊的寬度為基準
+  </div>
+
+</div>
+
+</body>
+</html>
