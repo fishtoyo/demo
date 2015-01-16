@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-size: 14px;
+	font-family: LiGothicMed, '微軟正黑體';
+}
+a {
+	color: #555;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.tabSet, .tabSet th, .tabSet td {
+	padding: 0;
+	border: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.tabSet input, .tabSet label, .tabSet select {
+	vertical-align: middle;
+}
+
+/* 
+	僅此範例中進行全域設定
+	自行切版請依使用標籤個別設定
+*/
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* ==========================================
+   Table 框架設定
+========================================== */
+.tabRwd {
+	width: 100%;
+}
+.tabRwd thead {
+  position: relative;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+.tabRwd tr {
+  display: table-row;
+}
+.tabRwd th,
+.tabRwd td {
+  display: table-cell;
+}
+.tabRwd tbody {
+  display: table-row-group;
+}
+.tabRwd tbody tr {
+  display: table-row;
+}
+@media (max-width: 992px) {
+	.tabRwd thead { /* 隱藏 thead 區塊 */
+	  position: absolute;
+	  padding: 0;
+	  border: 0;
+	  height: 1px;
+	  width: 1px;
+	  overflow: hidden;
+	}
+	.tabRwd tbody,
+	.tabRwd tbody tr,
+	.tabRwd tr,
+	.tabRwd th,
+	.tabRwd td {
+	  display: block;
+	}
+	.tabRwd tbody td[data-title]:before {
+	  content: attr(data-title);
+	  float: left;
+	}
+}
+
+
+/* ==========================================
+   以下是自行樣式設定
+========================================== */
+.list {
+	margin: 30px auto;
+	padding-bottom: 40px;
+	width: 900px;
+}
+.topTitle {
+	padding: 30px 0;
+	color: #444;
+	font-size: 20px;
+	text-align: center;
+}
+.tabRwd thead th {
+	color: #fff;
+	font-weight: normal;
+  text-align: center;
+  background-color: #1d96b2;
+  border: 1px solid #1d96b2;
+}
+.tabRwd th,
+.tabRwd td {
+  padding: 10px;
+	font-weight: normal;
+}
+.tabRwd tbody tr:nth-of-type(even) {
+  background-color: rgba(94, 93, 82, 0.1);
+}
+.tabRwd td {
+  text-align: center;
+}
+.tabRwd .img {
+	width: 102px;
+}
+.tabRwd .img a {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ddd;
+}
+.tabRwd .img img {
+	width: 100%;
+	background-color: #fff;
+}
+.tabRwd .title {
+	padding-left: 10px;
+	width: 400px;
+	text-align: left;
+}
+@media (max-width: 992px) {
+	.list {
+		margin: 0 auto;
+		padding: 0 10px 40px;
+		width: 100%;
+	}
+	.tabRwd tbody tr {
+		margin-bottom: 15px;
+	  border: 2px solid #1d96b2;
+	}
+	.tabRwd tbody td {
+	  text-align: right;
+	}
+	.tabRwd .img {
+		padding-bottom: 15px;
+		width: 100%;
+		background: none;
+	}
+	.tabRwd .img a {
+		width: 200px;
+		height: 200px;
+		border: none;
+	}
+	.tabRwd .title {
+		width: 100%;
+		color: #fff;
+		text-align: center;
+	  background-color: #1d96b2;
+	}
+	.tabRwd a {
+		font-size: 16px;
+		color: #fff;
+	}
+}
+
+/*
