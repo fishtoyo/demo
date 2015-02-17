@@ -1,13 +1,32 @@
 <!doctype html>
 <html>
 <head>
+<!-- Meta -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
 <meta name="keywords" content="Fish's Website | Multi-line Ellipsis">
 <meta name="description" content="Fish's Website | Multi-line Ellipsis">
 <title>Fish's Website | Multi-line Ellipsis</title>
-<link href="../../css/reset.css" rel="stylesheet">
-<link href="../../css/style.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="../../favicon.ico" rel="icon">
+<link href="../../favicon.ico" rel="shortcut icon">
+<link href="../../apple-touch-icon.png" rel="apple-touch-icon">
+<!-- Web Fonts -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:600italic,300,600" rel="stylesheet">
+<link href="../../assets/css/font-awesome-4.2.0.min.css" rel="stylesheet">
+<!-- CSS RWD Core -->
+<!-- ... -->
+<!-- CSS Plugins -->
+<!-- ... -->
+<!-- CSS Customization -->
+<link href="../../assets/css/common.css" rel="stylesheet">
+<link href="../../assets/css/style.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="assets/js/plugins/html5shiv-3.7.2.min.js"></script>
+<script src="assets/js/plugins/respond-1.4.2.min.js"></script>
+<![endif]-->
+
 <style>
 /* =============================================
  * @ Subject  Multi-line Ellipsis
@@ -20,21 +39,6 @@
   overflow: hidden;
 }
 </style>
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="../../js/plugins/jQuery/jquery-1.8.3.min.js"></script>
-<script src="js/ellipsis.js"></script>
-<script>
-jQuery(document).ready(function() {
-
-  // Multi-line Ellipsis
-  jQuery('.ellipsis').ellipsis({
-    height: 90
-  });
-
-});
-</script>
 </head>
 
 <body>
@@ -120,5 +124,23 @@ jQuery(document).ready(function() {
   </div>
 </div>
 
+<!--[if lt IE 9]>
+<script src="../../assets/js/plugins/jQuery/jquery-1.11.1.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="../../assets/js/plugins/jQuery/jquery-2.1.1.min.js"></script>
+<!--<![endif]-->
+<script src="../../assets/js/plugins/jQuery/jquery.mobile-1.4.4.custom.min.js"></script>
+<script src="../../assets/js/common.js"></script>
+<!-- jQuery Plugins -->
+<script src="js/ellipsis.js"></script>
+<script>
+$(document).ready(function() {
+  // Multi-line Ellipsis
+  jQuery('.ellipsis').ellipsis({
+    height: 90
+  });
+});
+</script>
 </body>
 </html>
