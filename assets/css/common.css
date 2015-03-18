@@ -1,13 +1,8 @@
 ﻿@charset "utf-8";
-/*
- * CSS Document 
- * ==========================================================================
- * 版權所有 2013 鉅潞科技網頁設計公司，並保留所有權利。
- * 網站地址: http://www.grnet.com.tw
- * ==========================================================================
- * $Author: Fish $
- * $Date: 2014-10-01 (FRI) $
-*/
+/* ==========================================
+ * @ Author   Fish
+ * @ Website  http://www.urmemo.com
+========================================== */
 
 
 /* ==========================================
@@ -16,11 +11,494 @@
 body, form, input, textarea, select {
 	margin: 0;
 	padding: 0;
-	color: #333;
-	font-size: 14px;
-	font-family: LiGothicMed, '微軟正黑體';
+	color: #888;
+	font-family: "MHei", STHeitiTC-Light, "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif, '微軟正黑體';
 }
-img { border: 0; text-decoration: none; vertical-align: top;}
-textarea { resize: none;}
+body, html {
+	height: 100%;
+	font-size: 87.5%; /* 14px */
+	line-height: 150%;
+	background-color: #426580;
+}
+a {
+	color: #4d9ad3;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:focus {
+	outline: none;
+}
+img {
+	border: 0;
+	text-decoration: none;
+}
+textarea {
+	resize: none;
+}
+div, span, a, p, input, label, textarea, img {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+/* ==========================================
+   Common Style
+========================================== */
+/* Clear */
+.clearBoth {
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+}
+.clearGroup:before,
+.paneBox:before,
+.clearGroup:after,
+.paneBox:after { 
+   content: "";
+   display: table; 
+}
+.clearGroup:after,
+.paneBox:after {
+   clear: both; 
+}
+.clearGroup,
+.paneBox { 
+   zoom: 1; /* IE6&7 */ 
+}
+
+/* Table */
+.tabSet, .tabSet th, .tabSet td {
+	padding: 0;
+	border: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.tabSet input, .tabSet label, .tabSet select {
+	vertical-align: middle;
+}
+
+/* Ul */
+.ulSet {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Placeholder */
+::-webkit-input-placeholder {	color: #000;}
+::-moz-placeholder { color: #000; opacity: 1;}
+:-ms-input-placeholder { color: #000;}
+:-moz-placeholder { color: #000;}
+
+/* animate */
+.animate {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+
+/* ==========================================
+   Page
+========================================== */
+.pageWrap {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100%;
+	background-color: #fff;
+}
+.pageWrap.full {
+	width: 100%;
+}
+.pageWrap .topBar {
+	width: 100%;
+	height: 5px;
+}
+.pageWrap .topBar span {
+	float: left;
+	display: block;
+	width: 20%;
+	height: 100%;
+}
+.pageWrap .topBar span:nth-child(1) {
+	background-color: #7abbe4;
+}
+.pageWrap .topBar span:nth-child(2) {
+	background-color: #92c08a;
+}
+.pageWrap .topBar span:nth-child(3) {
+	background-color: #ffbf5c;
+}
+.pageWrap .topBar span:nth-child(4) {
+	background-color: #d76650;
+}
+.pageWrap .topBar span:nth-child(5) {
+	background-color: #4c99c1;
+}
+
+
+/* ==========================================
+   Top Area
+========================================== */
+.topArea {
+	margin: auto;
+	padding: 60px 0;
+	max-width: 500px;
+	width: 100%;
+}
+.topArea .comment {
+	position: relative;
+	margin: 0 auto;
+	max-width: 300px;
+	padding: 15px 30px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background-color: #29a8c5;
+	
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+}
+.topArea .comment:before {
+	pointer-events: none;
+	content: '';
+	
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	margin-left: -10px;
+	width: 0;
+	height: 0;
+	
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #29a8c5 transparent transparent transparent;
+}
+.topArea .author {
+	padding-top: 30px;
+	font-size: 1.143em;
+	text-align: center;
+}
+.topArea .author img {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	
+	-webkit-border-radius: 75px;
+	   -moz-border-radius: 75px;
+	        border-radius: 75px;
+}
+.topArea .author h1 {
+	margin: 0;
+	padding: 15px 0 10px;
+	font-size: 1.857em;
+	font-weight: normal;
+}
+.topArea .btn {
+	position: relative;
+	display: block;
+	margin: 25px auto;
+	padding: 20px 0 10px;
+	max-width: 200px;
+	color: #c25958;
+	text-align: center;
+	text-decoration: none;
+}
+.topArea .btn:before,
+.topArea .btn:after {
+	pointer-events: none;
+	content: '';
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #c25958;
+	opacity: 0.2;
+	
+	-webkit-transition: opacity 0.3s, height 0.3s;
+	   -moz-transition: opacity 0.3s, height 0.3s;
+	        transition: opacity 0.3s, height 0.3s;
+}
+.topArea .btn:after {
+	top: 100%;
+	opacity: 0;
+	
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	        transition: transform 0.3s, opacity 0.3s;
+	
+	-webkit-transform: translateY(-10px);
+	   -moz-transform: translateY(-10px);
+	        transform: translateY(-10px);
+}
+.topArea .btn span:first-child {
+	display: block;
+	z-index: 2;
+}
+.topArea .btn span:last-child {
+	display: block;
+	padding: 10px 0 3px 0;
+	color: #c25958;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	z-index: 1;
+	opacity: 0;
+	
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+     -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+			    transition: transform 0.3s, opacity 0.3s;
+	
+	-webkit-transform: translateY(-100%);
+	   -moz-transform: translateY(-100%);
+	        transform: translateY(-100%);
+}
+.topArea .btn:hover:before,
+.topArea .btn:focus:before {
+	height: 6px;
+}
+.topArea .btn:hover:before,
+.topArea .btn:hover:after {
+	opacity: 1;
+	
+	-webkit-transform: translateY(0px);
+	   -moz-transform: translateY(0px);
+	        transform: translateY(0px);
+}
+.topArea .btn:hover span:last-child {
+	opacity: 1;
+	
+	-webkit-transform: translateY(0%);
+	   -moz-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+
+
+/* ==========================================
+   Nav
+========================================== */
+#nav {
+	height: 70px;
+}
+#nav ul {
+	width: 100%;
+}
+#nav li {
+	float: left;
+	width: 20%;
+}
+#nav li a {
+	position: relative;
+	display: block;
+	height: 50px;
+	color: #fff;
+	font-size: 1.071em;
+	line-height: 50px;
+	text-align: center;
+}
+#nav li a:before {
+	display: none;
+	pointer-events: none;
+	content: "";
+	
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	margin-left: -10px;
+	width: 0;
+	height: 0;
+	
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #329cb5 transparent transparent transparent;
+}
+#nav li:nth-child(odd) a {
+	background-color: #329cb5;
+}
+#nav li:nth-child(even) a {
+	background-color: #6eadbd;
+}
+#nav li:nth-child(odd) a:before {
+	border-color: #329cb5 transparent transparent transparent;
+}
+#nav li:nth-child(even) a:before {
+	border-color: #6eadbd transparent transparent transparent;
+}
+#nav li a.current:before {
+	display: block;
+}
+#nav .fa {
+	font-size: 1.714em;
+	line-height: 50px;
+}
+#nav span {
+	display: none;
+	padding-left: 7px;
+}
+#nav li:before a.current,
+#nav li:before a.current:hover {
+	cursor: default;
+	color: #fff;
+	background-color: #000;
+}
+.paneBox {
+	padding: 0 10px;
+}
+
+
+/* ==========================================
+   Main Wrap
+========================================== */
+#mainWrap {
+	padding: 0 10px;
+}
+
+
+/* ==========================================
+   About
+========================================== */
+#about .area {
+	padding: 15px 0 0;
+	text-align: center;
+}
+#about .leftArea img {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	
+	-webkit-border-radius: 75px;
+	   -moz-border-radius: 75px;
+	        border-radius: 75px;
+}
+#about .rightArea .title {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	font-size: 1.429em;
+	border-bottom: 1px solid #e2e2e2;
+}
+#about .rightArea .notice {
+	margin: 0 auto;
+	max-width: 300px;
+	font-size: 1.143em;
+	text-align: left;
+}
+#about .tabIdentity {
+	width: 100%;
+	line-height: 190%;
+}
+#about .tabIdentity th {
+	position: relative;
+	padding-left: 5px;
+	width: 45px;
+	color: #8A8A8A;
+	font-size: 1.071em;
+	text-align: left;
+}
+#about .tabIdentity th:after {
+	pointer-events: none;
+	content: '：';
+}
+#about .ulSkill {
+	color: #fff;
+}
+#about .ulSkill li {
+	margin-bottom: 5px;
+	padding: 0 10px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+#about .ulSkill li:nth-child(2n+1) {
+	background-color: #557a83;
+}
+#about .ulSkill li:nth-child(2n+2) {
+	background-color: #c25858;
+}
+#about .ulSkill .fa {
+	margin-right: 8px;
+	font-size: 1.15em;
+}
+#about .ulCases li {
+	margin-bottom: 8px;
+	font-size: 1.15em;
+	line-height: 1.15em;
+	text-align: left;
+}
+#about .ulCases li span {
+	display: inline-block;
+	margin: 0 10px 0 2px;
+	width: 36px;
+	height: 36px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #e4e4e4;
+	
+	-webkit-border-radius: 18px;
+	   -moz-border-radius: 18px;
+	        border-radius: 18px;
+}
+#about .ulCases .fa {
+	color: #fff;
+	font-size: 1.3em;
+}
+#about .ulCases strong {
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+
+/* Subject Bar */
+.subjectBar {
+	margin: 25px 0 10px;
+	height: 40px;
+	line-height: 42px;
+	border-bottom: 1px solid #ddd;
+}
+.subjectBar .icon {
+	float: left;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	font-size: 1.571em;
+	text-align: center;
+	background-color: #29a8c4;
+	
+	-webkit-border-radius: 5px 5px 0 0;
+	   -moz-border-radius: 5px 5px 0 0;
+	        border-radius: 5px 5px 0 0;
+}
+.subjectBar .txt {
+	float: left;
+	margin-left: 10px;
+	color: #8a8a8a;
+	font-size: 1.571em;
+}
+
+/* Common */
+.gap {
+	margin: 15px 0;
+	width: 100%;
+	height: 1px;
+	background: url('../images/gap1.png') 0 0 repeat-x;
+}
+
 
 /*
