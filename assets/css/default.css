@@ -8,17 +8,13 @@
 /* ==========================================
    Tag Reset
 ========================================== */
-body, form, input, textarea, select {
+body {
 	margin: 0;
 	padding: 0;
-	color: #888;
+	color: #333;
 	font-family: "MHei", STHeitiTC-Light, "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif, '微軟正黑體';
-}
-body, html {
-	height: 100%;
 	font-size: 14px;
 	line-height: 150%;
-	background-color: #426580;
 }
 a {
 	color: #4d9ad3;
@@ -37,10 +33,18 @@ img {
 textarea {
 	resize: none;
 }
-div, span, a, p, input, label, textarea, img, ul, li {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+/* Box Sizing */
+h1, h2, h3, h4, h5, header, footer, section, article, aside,
+div, span, a, img, ul, li, strong, p,
+form, select, textarea, label, input {
+	margin: 0;
+	padding: 0;
+	
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 
@@ -90,7 +94,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 :-ms-input-placeholder { color: #999;}
 :-moz-placeholder { color: #999;}
 
-/* animate */
+/* Animate */
 .animate {
 	-webkit-transition: all 0.4s ease-in-out;
 	   -moz-transition: all 0.4s ease-in-out;
