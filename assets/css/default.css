@@ -1,0 +1,102 @@
+﻿@charset "utf-8";
+/* ==========================================
+ * @ Author   Fish
+ * @ Website  http://codepen.io/fishtoyo/
+========================================== */
+
+
+/* ==========================================
+   Tag Reset
+========================================== */
+body, form, input, textarea, select {
+	margin: 0;
+	padding: 0;
+	color: #888;
+	font-family: "MHei", STHeitiTC-Light, "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif, '微軟正黑體';
+}
+body, html {
+	height: 100%;
+	font-size: 14px;
+	line-height: 150%;
+	background-color: #426580;
+}
+a {
+	color: #4d9ad3;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:focus {
+	outline: none;
+}
+img {
+	border: 0;
+	text-decoration: none;
+}
+textarea {
+	resize: none;
+}
+div, span, a, p, input, label, textarea, img, ul, li {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+/* ==========================================
+   Common Style
+========================================== */
+/* Clear */
+.clearBoth {
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+}
+.clearGroup:before,
+.clearGroup:after { 
+   content: "";
+   display: table; 
+}
+.clearGroup:after {
+   clear: both; 
+}
+.clearGroup { 
+   zoom: 1; /* IE6&7 */ 
+}
+
+/* Table */
+.tabSet, .tabSet th, .tabSet td {
+	padding: 0;
+	border: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.tabSet input, .tabSet label, .tabSet select {
+	vertical-align: middle;
+}
+
+/* Ul */
+.ulSet {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Placeholder */
+::-webkit-input-placeholder {	color: #999;}
+::-moz-placeholder { color: #999; opacity: 1;}
+:-ms-input-placeholder { color: #999;}
+:-moz-placeholder { color: #999;}
+
+/* animate */
+.animate {
+	-webkit-transition: all 0.4s ease-in-out;
+	   -moz-transition: all 0.4s ease-in-out;
+	     -o-transition: all 0.4s ease-in-out;
+	    -ms-transition: all 0.4s ease-in-out;
+	        transition: all 0.4s ease-in-out;
+}
+
+/*
