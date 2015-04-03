@@ -57,17 +57,17 @@ div, span, a, p, input, label, textarea, img, ul, li {
 .clearGroup:before,
 .paneBox:before,
 .clearGroup:after,
-.paneBox:after { 
+.paneBox:after {
    content: "";
-   display: table; 
+   display: table;
 }
 .clearGroup:after,
 .paneBox:after {
-   clear: both; 
+   clear: both;
 }
 .clearGroup,
-.paneBox { 
-   zoom: 1; /* IE6&7 */ 
+.paneBox {
+   zoom: 1; /* IE6&7 */
 }
 
 /* Table */
@@ -162,7 +162,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	color: #fff;
 	text-align: center;
 	background-color: #29a8c5;
-	
+
 	-webkit-border-radius: 10px;
 	   -moz-border-radius: 10px;
 	        border-radius: 10px;
@@ -170,14 +170,14 @@ div, span, a, p, input, label, textarea, img, ul, li {
 .topArea .comment:before {
 	pointer-events: none;
 	content: '';
-	
+
 	position: absolute;
 	bottom: -10px;
 	left: 50%;
 	margin-left: -10px;
 	width: 0;
 	height: 0;
-	
+
 	border-style: solid;
 	border-width: 10px 10px 0 10px;
 	border-color: #29a8c5 transparent transparent transparent;
@@ -191,7 +191,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	margin: 0 auto;
 	width: 150px;
 	height: 150px;
-	
+
 	-webkit-border-radius: 75px;
 	   -moz-border-radius: 75px;
 	        border-radius: 75px;
@@ -216,7 +216,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 .topArea .btn:after {
 	pointer-events: none;
 	content: '';
-	
+
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -224,7 +224,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	height: 1px;
 	background: #c25958;
 	opacity: 0.2;
-	
+
 	-webkit-transition: opacity 0.3s, height 0.3s;
 	   -moz-transition: opacity 0.3s, height 0.3s;
 	        transition: opacity 0.3s, height 0.3s;
@@ -232,11 +232,11 @@ div, span, a, p, input, label, textarea, img, ul, li {
 .topArea .btn:after {
 	top: 100%;
 	opacity: 0;
-	
+
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
 	        transition: transform 0.3s, opacity 0.3s;
-	
+
 	-webkit-transform: translateY(-10px);
 	   -moz-transform: translateY(-10px);
 	        transform: translateY(-10px);
@@ -254,11 +254,11 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	text-transform: uppercase;
 	z-index: 1;
 	opacity: 0;
-	
+
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
      -moz-transition: -moz-transform 0.3s, opacity 0.3s;
 			    transition: transform 0.3s, opacity 0.3s;
-	
+
 	-webkit-transform: translateY(-100%);
 	   -moz-transform: translateY(-100%);
 	        transform: translateY(-100%);
@@ -270,14 +270,14 @@ div, span, a, p, input, label, textarea, img, ul, li {
 .topArea .btn:hover:before,
 .topArea .btn:hover:after {
 	opacity: 1;
-	
+
 	-webkit-transform: translateY(0px);
 	   -moz-transform: translateY(0px);
 	        transform: translateY(0px);
 }
 .topArea .btn:hover span:last-child {
 	opacity: 1;
-	
+
 	-webkit-transform: translateY(0%);
 	   -moz-transform: translateY(0%);
 	        transform: translateY(0%);
@@ -310,14 +310,14 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	display: none;
 	pointer-events: none;
 	content: "";
-	
+
 	position: absolute;
 	bottom: -10px;
 	left: 50%;
 	margin-left: -10px;
 	width: 0;
 	height: 0;
-	
+
 	border-style: solid;
 	border-width: 10px 10px 0 10px;
 	border-color: #329cb5 transparent transparent transparent;
@@ -375,7 +375,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	margin: 0 auto;
 	width: 150px;
 	height: 150px;
-	
+
 	-webkit-border-radius: 75px;
 	   -moz-border-radius: 75px;
 	        border-radius: 75px;
@@ -421,7 +421,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	line-height: 38px;
 	text-align: center;
 	background-color: #e4e4e4;
-	
+
 	-webkit-border-radius: 18px;
 	   -moz-border-radius: 18px;
 	        border-radius: 18px;
@@ -446,7 +446,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	color: #888;
 	background-color: #fff;
 	border: solid 3px #557a83;
-	
+
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -465,14 +465,14 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	line-height: 55px;
 	background-color: #557a83;
 	border: 5px solid #fff;
-	
+
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
 #resume .boxArea:last-child .year {
 	content: '2006';
-	
+
 	top: -31px;
 	margin: 0 0 0 -33px;
 	width: 56px;
@@ -509,7 +509,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 #resume .skillBar .barLine {
 	height: 10px;
 	background-color: #f6f6f6;
-	
+
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;
 	        border-radius: 5px;
@@ -518,7 +518,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	position: relative;
 	height: 100%;
 	background-color: #6faebe;
-	
+
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -526,7 +526,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 #resume .skillBar .line:before {
 	pointer-events: none;
 	content: '';
-	
+
 	position: absolute;
 	bottom: -6px;
 	right: 0;
@@ -546,7 +546,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	font-size: 12px;
 	text-align: center;
 	background-color: #dd5958;
-	
+
 	-webkit-border-radius: 4px;
 	   -moz-border-radius: 4px;
 	        border-radius: 4px;
@@ -567,7 +567,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	width: 95%;
 }
 #resume .langArea {
-	
+
 }
 #resume .langBar {
 	padding: 10px 0;
@@ -633,6 +633,100 @@ div, span, a, p, input, label, textarea, img, ul, li {
 
 
 /* ==========================================
+   Blog
+========================================== */
+#blog {
+	margin: 0 auto;
+	max-width: 800px;
+}
+#blog .article {
+	margin: 20px 0 25px;
+}
+#blog .top .data,
+#blog .top .cate {
+	float: left;
+	padding: 12px 0 0;
+	width: 60px;
+	height: 60px;
+	color: #8a8a8a;
+	text-align: center;
+	line-height: 22px;
+	background-color: #efefef;
+}
+#blog .top .data strong {
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+}
+#blog .top .data span {
+	font-size: 12px;
+}
+#blog .top .cate {
+	float: right;
+	padding-top: 15px;
+	color: #c25858;
+	font-size: 30px;
+}
+#blog .top .title {
+	float: none;
+	padding: 20px 0 0;
+	line-height: 24px;
+	clear: both;
+}
+#blog .top .title a {
+	color: #c25958;
+	font-size: 24px;
+	font-weight: bold;
+}
+#blog .descMain {
+	margin: 10px 0;
+}
+#blog .descMain img {
+	width: 100%;
+	height: auto;
+}
+#blog .more {
+	position: relative;
+	display: inline-block;
+}
+#blog .more span {
+	position: relative;
+	display: block;
+	padding: 0 20px;
+	width: 100%;
+	height: 30px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 32px;
+	background-color: #6eadbd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 1;
+}
+#blog .more:before {
+	pointer-events: auto;
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #669fad;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 0;
+}
+#blog .more:hover {
+	text-decoration: none;
+}
+#blog .more:hover span {
+	top: 2px;
+}
+
+
+/* ==========================================
    Share Style
 ========================================== */
 /* Gap */
@@ -657,7 +751,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	font-size: 1.571em;
 	text-align: center;
 	background-color: #29a8c4;
-	
+
 	-webkit-border-radius: 5px 5px 0 0;
 	   -moz-border-radius: 5px 5px 0 0;
 	        border-radius: 5px 5px 0 0;
@@ -680,7 +774,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	width: 100%;
 	height: 40px;
 	line-height: 40px;
-	
+
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;
 	        border-radius: 5px;
