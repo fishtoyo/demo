@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="keywords" content="Fish's Site">
+<meta name="description" content="Fish's Site">
+<meta name="author" content="Fish">
+<title>Fish's Site</title>
+<!-- Favicon -->
+<link href="favicon.ico" rel="icon">
+<link href="favicon.ico" rel="shortcut icon">
+<link href="apple-touch-icon.png" rel="apple-touch-icon">
+<!-- Plugins -->
+<link href="assets/css/shCore.css" rel="stylesheet">
+<link href="assets/css/shCoreRDark.css" rel="stylesheet">
+<!-- Web Fonts -->
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<!-- CSS Customization -->
+<link href="assets/css/common.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="assets/js/plugins/html5shiv-3.7.2.min.js"></script>
+<script src="assets/js/plugins/respond-1.4.2.min.js"></script>
+<![endif]--></head>
+<body>
+
+<div class="pageWrap">
+  <!-- Header 先隱藏
+  <= render :partial => "header" >
+  -->
+  <!-- Nav -->
+  <nav id="nav" class="tabsWrap">
+  <ul class="ulSet tabs">
+    <li>
+      <a href="#" title="關於我">
+        <i class="fa fa-street-view"></i><span>關於我</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="履歷表">
+        <i class="fa fa-graduation-cap"></i><span>履歷表</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="作品集">
+        <i class="fa fa-folder-open"></i><span>作品集</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="隨手記">
+        <i class="fa fa-coffee"></i><span>隨手記</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="聯絡我">
+        <i class="fa fa-envelope"></i><span>聯絡我</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+  <!-- Main -->
+  
+  <!-- Footer -->
+  <footer id="footer">
+  Footer
+</footer>
+</div>
+
+<!--[if lt IE 9]>
+<script src="assets/js/plugins/jQuery/jquery-1.11.1.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="assets/js/plugins/jQuery/jquery-2.1.1.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/plugins/jQuery/jquery.mobile-1.4.4.custom.min.js"></script>
+<script src="assets/js/plugins/jQuery/jquery.tools-1.1.2.min.js"></script>
+<script src="assets/js/common.js"></script>
+<!-- Plugins -->
+<script src="assets/js/plugins/jQuery/shCore.js"></script>
+<script src="assets/js/plugins/jQuery/shBrushJScript.js"></script><!-- JavaScript -->
+<script src="assets/js/plugins/jQuery/shBrushXml.js"></script><!-- HTML -->
+<script src="assets/js/plugins/jQuery/shBrushCss.js"></script><!-- CSS -->
+<script src="assets/js/plugins/jQuery/shBrushSass.js"></script><!-- SASS -->
+<script>
+SyntaxHighlighter.all();
+$(document).ready(function() {
+  $('ul.tabs').tabs('#mainWrap > .paneBox');
+});
+</script></body>
+</html>

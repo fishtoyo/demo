@@ -722,7 +722,19 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	text-decoration: none;
 }
 #blog .more:hover span {
-	top: 2px;
+	top: 3px;
+}
+#blog .more.view {
+	display: block;
+	text-align: center;
+}
+#blog .more.view span {
+	height: 40px;
+	line-height: 42px;
+	background-color: #c25858;
+}
+#blog .more.view:before {
+	background-color: #b04140;
 }
 
 
