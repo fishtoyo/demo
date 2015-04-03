@@ -10,26 +10,41 @@
 <meta name="author" content="Fish">
 <title>Fish's Site</title>
 <!-- Favicon -->
-<link href="favicon.ico" rel="icon">
-<link href="favicon.ico" rel="shortcut icon">
-<link href="apple-touch-icon.png" rel="apple-touch-icon">
+<link href="/favicon.ico" rel="icon">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/apple-touch-icon.png" rel="apple-touch-icon">
 <!-- Plugins -->
-<link href="assets/css/shCore.css" rel="stylesheet">
-<link href="assets/css/shCoreRDark.css" rel="stylesheet">
+<link href="/assets/css/shCore.css" rel="stylesheet">
+<link href="/assets/css/shCoreRDark.css" rel="stylesheet">
 <!-- Web Fonts -->
-<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
 <!-- CSS Customization -->
-<link href="assets/css/common.css" rel="stylesheet">
+<link href="/assets/css/common.css" rel="stylesheet">
 <!--[if lt IE 9]>
-<script src="assets/js/plugins/html5shiv-3.7.2.min.js"></script>
-<script src="assets/js/plugins/respond-1.4.2.min.js"></script>
+<script src="/assets/js/plugins/html5shiv-3.7.2.min.js"></script>
+<script src="/assets/js/plugins/respond-1.4.2.min.js"></script>
 <![endif]--></head>
 <body>
 
 <div class="pageWrap">
-  <!-- Header 先隱藏
-  <= render :partial => "header" >
-  -->
+  <!-- Header -->
+  <div class="topBar">
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+<div class="topArea">
+  <div class="comment">
+    我是一個熱愛網頁設計的女生。
+  </div>
+  <div class="author">
+    <img src="assets/images/author.png" height="150" width="150" alt="">
+    <h1>鄭于庭</h1>
+    <span>Yu-Ting Cheng</span>
+  </div>
+  <a href="#" title="了解我" class="btn">
+    <span>關於我</span>
+    <span><i class="fa fa-arrow-down"></i></span>
+  </a>
+</div>
   <!-- Nav -->
   <nav id="nav" class="tabsWrap">
   <ul class="ulSet tabs">
@@ -62,44 +77,6 @@
 </nav>
   <!-- Main -->
   <div id="mainWrap">
-  <!-- 隨手記 -->
-  <div id="blog" class="paneBox">
-  <div class="subjectBar">
-    <div class="icon"><i class="fa fa-comments-o"></i></div>
-    <div class="txt">記事分享</div>
-  </div>
-  <!-- 01 -->
- 	<div class="article">
- 		<div class="top">
-	 		<div class="data"><strong>16</strong><span>Dec'15</span></div>
-	 		<div class="cate"><i class="fa fa-video-camera"></i></div>
-	 		<div class="title"><a href="#" title="">An Example post with a video</a></div>
- 		</div>
-		<div class="descMain">
-			<img src="http://fishtoyo.github.io/website/photos/images/39.jpg" alt="">
-			reiciendis et laboriosam nulla necessitatibus eveniet eaque officiis et aut ratione magni voluptatibus provident magni expedita ea aut incidunt commodi quis autem
-		</div>
-		<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
- 	</div>
-  <div class="gap"></div>
-  <!-- 01 End -->
-  <!-- 02 -->
- 	<div class="article">
- 		<div class="top">
-	 		<div class="data"><strong>16</strong><span>MAR'15</span></div>
-	 		<div class="cate"><i class="fa fa-code"></i></div>
-	 		<div class="title"><a href="#" title="">Vero asperiores deserunt iusto doloremqueo</a></div>
- 		</div>
-		<div class="descMain">
-			<img src="http://fishtoyo.github.io/website/photos/images/150.jpg" alt="">
-			explicabo eum nobis tempore possimus sed rem velit recusandae voluptatum iusto nulla quidem eveniet est aliquid quasi sed et dignissimos ut consectetur beatae ad voluptatem eligendi maiores incidunt doloribus non maiores animi eveniet soluta quos eveniet provident atque sed corporis dolorem iste aperiam illo dolorem sed id qui dolore reiciendis
-		</div>
-		<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
- 	</div>
-  <div class="gap"></div>
-  <!-- 02 End -->
-  <a href="#" title="更多記事分享..." class="more view"><span>更多記事分享 <i class="fa fa-angle-double-down"></i></span></a>
-</div>
   <!-- 關於我 -->
   <div id="about" class="paneBox">
   <div class="area leftArea">
@@ -272,75 +249,97 @@
     <span class="notice">說明文字</span>
   </a>
 </div>
+  <!-- 隨手記 -->
+  <div id="blog" class="paneBox">
+  <div class="subjectBar">
+    <div class="icon"><i class="fa fa-comments-o"></i></div>
+    <div class="txt">記事分享</div>
+  </div>
+  <!-- 01 -->
+ 	<div class="article">
+ 		<div class="top">
+	 		<div class="data"><strong>16</strong><span>Dec'15</span></div>
+	 		<div class="cate"><i class="fa fa-video-camera"></i></div>
+	 		<div class="title"><a href="blog/view.html" title="">An Example post with a video</a></div>
+ 		</div>
+		<div class="descMain">
+			<img src="http://fishtoyo.github.io/website/photos/images/39.jpg" alt="">
+			sed aut voluptatem sed autem ea hic ipsum qui iusto quam laboriosam eligendi tempore non et voluptas
+		</div>
+		<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
+ 	</div>
+  <div class="gap"></div>
+  <!-- 01 End -->
+  <!-- 02 -->
+ 	<div class="article">
+ 		<div class="top">
+	 		<div class="data"><strong>16</strong><span>MAR'15</span></div>
+	 		<div class="cate"><i class="fa fa-code"></i></div>
+	 		<div class="title"><a href="#" title="">Vero asperiores deserunt iusto doloremqueo</a></div>
+ 		</div>
+		<div class="descMain">
+			<img src="http://fishtoyo.github.io/website/photos/images/150.jpg" alt="">
+			repellendus molestiae est quasi quis non necessitatibus amet doloribus ea odio quidem consequatur veniam cupiditate officiis
+		</div>
+		<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
+ 	</div>
+  <div class="gap"></div>
+  <!-- 02 End -->
+  <a href="#" title="更多記事分享..." class="more view"><span>更多記事分享 <i class="fa fa-angle-double-down"></i></span></a>
+</div>
   <!-- 聯絡我 -->
   <div id="contact" class="paneBox">
-  <!-- JS -->
-  <pre class="brush: js;">
-  // Banner
-  $.supersized({
-    slide_interval : 3000,
-    transition : 1,
-    slide_links : 'blank',
-    slides : [
-      { image : 'assets/images/de/ban1.png', title : '', url : '#'},
-      { image : 'assets/images/de/ban2.png', title : '', url : '#'}
-    ]
-  });
-
-  // Btn Control
-  $('.iScrollBtn').on('click', function(e) {
-    e.preventDefault();
-    $('body, html').animate({ 'scrollTop': $(window).height() - 125 }, 500);
-  });
-  </pre>
-  <!-- CSS -->
-  <pre class="brush: css;">
-  .brad {
-    font-size: 10px;
-  }
-  #test {
-    color: #000;
-  }
-  </pre>
-  <!-- SASS -->
-  <pre class="brush: sass;">
-  <div class="table"></div>
-  <form action="">
-  fffhn
-    ff
+  <div class="subjectBar">
+    <div class="icon"><i class="fa fa-thumbs-o-up"></i></div>
+    <div class="txt">與我聯繫</div>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="FullnameForm">Fullname</label>
+      <input type="text" class="form-control" id="FullnameForm" placeholder="Enter Fullname">
+    </div>
+    <div class="form-group">
+      <label for="CompanyForm">Company</label>
+      <input type="text" class="form-control" id="CompanyForm" placeholder="Enter Company">
+    </div>
+    <div class="form-group">
+      <label for="EmailForm">Email Address</label>
+      <input type="email" class="form-control" id="EmailForm" placeholder="Enter Address">
+    </div>
+    <div class="form-group">
+      <label for="PhoneForm">Phone Number</label>
+      <input type="text" class="form-control" id="PhoneForm" placeholder="Enter Phone NUmber">
+    </div>
+    <div class="form-group">
+      <label for="MesageForm">Message</label>
+      <textarea class="form-control" rows="8" id="MesageForm" placeholder="Enter Message"></textarea>
+    </div>
+    <button type="submit" class="btn animate"><span><i class="fa fa-paper-plane"></i> 送出表單</span></button>
   </form>
-  </pre>
-  <!-- HTML -->
-  <pre class="brush: html;">
-  <div class="table"></div>
-  <form action="">
-  fffhn
-    ff
-  </form>
-  </pre>
 </div>
 </div>
   <!-- Footer -->
   <footer id="footer">
-  Footer
+	<div class="line"></div>
+  <div class="copy">Copyright &copy; 2015 Fish's Site</div>
 </footer>
 </div>
 
 <!--[if lt IE 9]>
-<script src="assets/js/plugins/jQuery/jquery-1.11.1.min.js"></script>
+<script src="/assets/js/plugins/jQuery/jquery-1.11.1.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script src="assets/js/plugins/jQuery/jquery-2.1.1.min.js"></script>
+<script src="/assets/js/plugins/jQuery/jquery-2.1.1.min.js"></script>
 <!--<![endif]-->
-<script src="assets/js/plugins/jQuery/jquery.mobile-1.4.4.custom.min.js"></script>
-<script src="assets/js/plugins/jQuery/jquery.tools-1.1.2.min.js"></script>
-<script src="assets/js/common.js"></script>
+<script src="/assets/js/plugins/jQuery/jquery.mobile-1.4.4.custom.min.js"></script>
+<script src="/assets/js/plugins/jQuery/jquery.tools-1.1.2.min.js"></script>
+<script src="/assets/js/common.js"></script>
 <!-- Plugins -->
-<script src="assets/js/plugins/jQuery/shCore.js"></script>
-<script src="assets/js/plugins/jQuery/shBrushJScript.js"></script><!-- JavaScript -->
-<script src="assets/js/plugins/jQuery/shBrushXml.js"></script><!-- HTML -->
-<script src="assets/js/plugins/jQuery/shBrushCss.js"></script><!-- CSS -->
-<script src="assets/js/plugins/jQuery/shBrushSass.js"></script><!-- SASS -->
+<script src="/assets/js/plugins/jQuery/shCore.js"></script>
+<script src="/assets/js/plugins/jQuery/shBrushJScript.js"></script><!-- JavaScript -->
+<script src="/assets/js/plugins/jQuery/shBrushXml.js"></script><!-- HTML -->
+<script src="/assets/js/plugins/jQuery/shBrushCss.js"></script><!-- CSS -->
+<script src="/assets/js/plugins/jQuery/shBrushSass.js"></script><!-- SASS -->
 <script>
 SyntaxHighlighter.all();
 $(document).ready(function() {
