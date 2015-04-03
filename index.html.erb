@@ -13,6 +13,9 @@
 <link href="favicon.ico" rel="icon">
 <link href="favicon.ico" rel="shortcut icon">
 <link href="apple-touch-icon.png" rel="apple-touch-icon">
+<!-- Plugins -->
+<link href="assets/css/shCore.css" rel="stylesheet">
+<link href="assets/css/shCoreRDark.css" rel="stylesheet">
 <!-- Web Fonts -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 <!-- CSS Customization -->
@@ -26,7 +29,7 @@
 <body>
 
 <div class="pageWrap">
-  
+
   <div class="topBar">
     <span></span><span></span><span></span><span></span><span></span>
   </div>
@@ -155,7 +158,7 @@
         <li><i class="fa fa-check"></i>CSS 撰寫與設計</li>
         <li><i class="fa fa-check"></i>RWD 自適應版型製作</li>
         <li><i class="fa fa-check"></i>jQuery 效果撰寫、套件搭配</li>
-        <li><i class="fa fa-check"></i>了解各瀏覽器的屬性支援度</li> 
+        <li><i class="fa fa-check"></i>了解各瀏覽器的屬性支援度</li>
       </ul>
       <div class="subjectBar">
         <div class="icon"><i class="fa fa-pie-chart"></i></div>
@@ -259,7 +262,50 @@
 
     <!-- 聯絡我 -->
     <div id="contact" class="paneBox">
-      聯絡我
+      <!-- JS -->
+      <pre class="brush: js;">
+      // Banner
+      $.supersized({
+        slide_interval : 3000,
+        transition : 1,
+        slide_links : 'blank',
+        slides : [
+          { image : 'assets/images/de/ban1.png', title : '', url : '#'},
+          { image : 'assets/images/de/ban2.png', title : '', url : '#'}
+        ]
+      });
+
+      // Btn Control
+      $('.iScrollBtn').on('click', function(e) {
+        e.preventDefault();
+        $('body, html').animate({ 'scrollTop': $(window).height() - 125 }, 500);
+      });
+      </pre>
+      <!-- CSS -->
+      <pre class="brush: css;">
+      .brad {
+        font-size: 10px;
+      }
+      #test {
+        color: #000;
+      }
+      </pre>
+      <!-- SASS -->
+      <pre class="brush: sass;">
+      <div class="table"></div>
+      <form action="">
+      fffhn
+        ff
+      </form>
+      </pre>
+      <!-- HTML -->
+      <pre class="brush: html;">
+      <div class="table"></div>
+      <form action="">
+      fffhn
+        ff
+      </form>
+      </pre>
     </div>
 
   </div>
@@ -275,7 +321,14 @@
 <script src="assets/js/plugins/jQuery/jquery.mobile-1.4.4.custom.min.js"></script>
 <script src="assets/js/plugins/jQuery/jquery.tools-1.1.2.min.js"></script>
 <script src="assets/js/common.js"></script>
+<!-- Plugins -->
+<script src="assets/js/plugins/jQuery/shCore.js"></script>
+<script src="assets/js/plugins/jQuery/shBrushJScript.js"></script><!-- JavaScript -->
+<script src="assets/js/plugins/jQuery/shBrushXml.js"></script><!-- HTML -->
+<script src="assets/js/plugins/jQuery/shBrushCss.js"></script><!-- CSS -->
+<script src="assets/js/plugins/jQuery/shBrushSass.js"></script><!-- SASS -->
 <script>
+SyntaxHighlighter.all();
 $(document).ready(function() {
   $('ul.tabs').tabs('#mainWrap > .paneBox');
 });
