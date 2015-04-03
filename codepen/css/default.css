@@ -39,7 +39,7 @@ div, span, a, img, ul, li, strong, p,
 form, select, textarea, label, input {
 	margin: 0;
 	padding: 0;
-	
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
 	     -o-box-sizing: border-box;
@@ -51,7 +51,7 @@ form, select, textarea, label, input {
 /* ==========================================
    Common Style
 ========================================== */
-/* Clear */
+/* Clear */
 .clearBoth {
 	height: 0;
 	font-size: 0;
@@ -59,18 +59,18 @@ form, select, textarea, label, input {
 	clear: both;
 }
 .clearGroup:before,
-.clearGroup:after { 
+.clearGroup:after {
    content: "";
-   display: table; 
+   display: table;
 }
 .clearGroup:after {
-   clear: both; 
+   clear: both;
 }
-.clearGroup { 
-   zoom: 1; /* IE6&7 */ 
+.clearGroup {
+   zoom: 1; /* IE6&7 */
 }
 
-/* Table */
+/* Table */
 .tabSet, .tabSet th, .tabSet td {
 	padding: 0;
 	border: 0;
@@ -81,7 +81,7 @@ form, select, textarea, label, input {
 	vertical-align: middle;
 }
 
-/* Ul */
+/* Ul */
 .ulSet {
 	margin: 0;
 	padding: 0;
@@ -94,7 +94,7 @@ form, select, textarea, label, input {
 :-ms-input-placeholder { color: #999;}
 :-moz-placeholder { color: #999;}
 
-/* Animate */
+/* Animate */
 .animate {
 	-webkit-transition: all 0.4s ease-in-out;
 	   -moz-transition: all 0.4s ease-in-out;
