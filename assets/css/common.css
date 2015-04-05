@@ -168,8 +168,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
    Nav
 ========================================== */
 #nav {
-	height: 50px;
-	border-top: 2px solid #329cb5;
+	height: 40px;
 }
 #nav ul {
 	width: 100%;
@@ -181,27 +180,28 @@ div, span, a, p, input, label, textarea, img, ul, li {
 #nav li a {
 	position: relative;
 	display: block;
-	padding-top: 30px;
-	height: 90px;
+	padding-top: 20px;
+	height: 60px;
 	color: #fff;
-	line-height: 32px;
+	line-height: 30px;
 	text-align: center;
 	text-decoration: none;
 }
-#nav li a:before {
-	display: none;
+#nav li a:before,
+#nav li a:after {
 	pointer-events: none;
 	content: "";
-
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	top: 0;
 	width: 100%;
-	height: 5px;
-	background-color: #305c7d;
+}
+#nav li a:before {
+	left: 0;
+	height: 3px;
+	background-color: #329cb5;
 }
 #nav li a .fa {
-	font-size: 30px;
+	font-size: 22px;
 }
 #nav li a span {
 	display: none;
@@ -209,16 +209,22 @@ div, span, a, p, input, label, textarea, img, ul, li {
 }
 /* Current */
 #nav li a.current {
-	background-color: #329cb5;
-}
-#nav li a.current:before {
-	display: block;
+	background-color: #305c7d;
 }
 #nav li a.current span {
-	font-size: 16px;
+	display: none;
 }
-#nav li:before a.current,
-#nav li:before a.current:hover {
+#nav li a.current:after {
+	left: 50%;
+	margin-left: -8px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: #000 transparent transparent transparent;
+}
+#nav li a.current:before,
+#nav li a:before:hover {
 	cursor: default;
 	color: #fff;
 	background-color: #000;
