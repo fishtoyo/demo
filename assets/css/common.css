@@ -207,6 +207,13 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	display: none;
 	font-size: 14px;
 }
+/* BackgroundColor */
+#nav li:nth-child(even) a {
+	background-color: #29a8c5;
+}
+#nav li:nth-child(odd) a {
+	background-color: #7ab6c5;
+}
 /* Current */
 #nav li a.current {
 	background-color: #305c7d;
