@@ -1,0 +1,51 @@
+﻿@charset "utf-8";
+
+/* ==========================================
+	 Small devices Tablets (<768px)
+========================================== */
+@media screen and (min-width: 768px) {
+	/* ==========================================
+	   Share Style
+	========================================== */
+	/* Subject Bar */
+	.gap {
+		display: block;
+	}
+	.subjectBar {
+		margin: 5px 0 10px;
+	}
+	.clearBoth {
+		display: block;
+	}
+
+	/* ==========================================
+	   About
+	========================================== */
+	#about .area {
+		padding: 25px 0 5px;
+	}
+	#about .leftArea,
+	#about .rightArea {
+		width: calc(50% - 10px);
+	}
+	#about .leftArea {
+		float: left;
+	}
+	#about .rightArea {
+		float: right;
+		width: calc(50% - 10px);
+	}
+	#about .area.leftArea {
+		width: 200px;
+	}
+	#about .area.rightArea {
+		width: calc(100% - 200px);
+	}
+	#about .rightArea .title {
+		margin-bottom: 10px;
+		padding: 5px 0;
+		text-align: left;
+	}
+
+}
+/*

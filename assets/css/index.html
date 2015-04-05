@@ -3,11 +3,11 @@
 <head>
 <!-- Meta -->
 <meta charset="utf-8">
-<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<meta name="keywords" content="Fish's Site">
-<meta name="description" content="Fish's Site">
-<meta name="author" content="Fish">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="author" content="Fishtoyo">
+<meta name="copyright" content="Fishtoyo">
+<meta name="keywords" content="Fishtoyo,HTML,CSS,jQuery,網頁前端,網頁設計,創作,前端技術,web design,front-end">
+<meta name="description" content="Fishtoyo 分享網頁前端設計心得與效果教學">
 <title>Fish's Site</title>
 <!-- Favicon -->
 <link href="/favicon.ico" rel="icon">
@@ -17,9 +17,12 @@
 <link href="/assets/css/shCore.css" rel="stylesheet">
 <link href="/assets/css/shCoreRDark.css" rel="stylesheet">
 <!-- Web Fonts -->
+<link href="http://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
 <!-- CSS Customization -->
+<link href="/assets/css/normalize.css" rel="stylesheet">
 <link href="/assets/css/common.css" rel="stylesheet">
+<link href="/assets/css/tablets.css" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="/assets/js/plugins/html5shiv-3.7.2.min.js"></script>
 <script src="/assets/js/plugins/respond-1.4.2.min.js"></script>
@@ -27,26 +30,21 @@
 <body>
 
 <div class="pageWrap">
-  <!-- Header -->
-  <div class="topBar">
-  <span></span><span></span><span></span><span></span><span></span>
-</div>
-<div class="topArea">
-  <div class="comment">
-    我是一個熱愛網頁設計的女生。
+	<div class="topArea clearGroup">
+	  <!-- Header -->
+	  <header id="header">
+  <div class="author">
+    <a href="./" title="Fish">
+      <img src="assets/images/author.png" height="150" width="150" alt="">
+    </a>
   </div>
   <div class="author">
-    <img src="assets/images/author.png" height="150" width="150" alt="">
     <h1>鄭于庭</h1>
-    <span>Yu-Ting Cheng</span>
+    <h2>前端設計師</h2>
   </div>
-  <a href="#" title="了解我" class="btn">
-    <span>關於我</span>
-    <span><i class="fa fa-arrow-down"></i></span>
-  </a>
-</div>
-  <!-- Nav -->
-  <nav id="nav" class="tabsWrap">
+</header>
+	  <!-- Nav -->
+	  <nav id="nav" class="tabsWrap">
   <ul class="ulSet tabs">
     <li>
       <a href="#" title="關於我">
@@ -75,7 +73,8 @@
     </li>
   </ul>
 </nav>
-  <!-- Main -->
+	</div>
+	<!-- Main -->
   
   <!-- Footer -->
   <footer id="footer">
