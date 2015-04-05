@@ -19,6 +19,42 @@
 	}
 
 	/* ==========================================
+	   Share Style
+	========================================== */
+	#header {
+		float: left;
+		width: 260px;
+	}
+
+	/* ==========================================
+	   Nav
+	========================================== */
+	#nav {
+		float: left;
+		width: calc(100% - 260px);
+		height: 130px;
+		border-top: none;
+	}
+	#nav li a {
+		padding-top: 38px;
+		height: 130px;
+	}
+	#nav li a .fa {
+		font-size: 26px;
+	}
+	#nav li a span {
+		display: block
+	}
+	/* Current */
+	#nav li a.current {
+		padding-top: 30px;
+		line-height: 32px;
+	}
+	#nav li a.current .fa {
+		font-size: 30px;
+	}
+
+	/* ==========================================
 	   About
 	========================================== */
 	#about .area {
