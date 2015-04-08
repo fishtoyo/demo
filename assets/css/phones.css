@@ -1,22 +1,9 @@
 ﻿@charset "utf-8";
 
 /* ==========================================
-	 Small devices Phones
+	 Extra Small Devices
 ========================================== */
 @media screen and (min-width: 479px) {
-	/* ==========================================
-	   Share Style
-	========================================== */
-	/* Subject Bar */
-	.gap {
-		display: block;
-	}
-	.subjectBar {
-		margin: 5px 0 10px;
-	}
-	.clearBoth {
-		display: block;
-	}
 
 	/* ==========================================
 	   Share Style
@@ -44,7 +31,6 @@
 	#nav {
 		float: left;
 		width: calc(100% - 200px);
-		height: 100px;
 	}
 	#nav li a {
 		padding-top: 40px;
@@ -57,30 +43,45 @@
 	/* ==========================================
 	   About
 	========================================== */
-	#about .area {
-		padding: 25px 0 10px;
+	/* Comment */
+	.commentArea {
+		padding-bottom: 0;
 	}
-	#about .leftArea,
-	#about .rightArea {
+	.commentArea .title {
+		text-align: center;
+	}
+	/* Contact */
+	.contactArea .leftArea,
+	.contactArea .rightArea {
 		width: calc(50% - 10px);
 	}
-	#about .leftArea {
+	.contactArea .leftArea {
 		float: left;
 	}
-	#about .rightArea {
+	.contactArea .rightArea {
 		float: right;
-		width: calc(50% - 10px);
 	}
-	#about .area.leftArea {
-		width: 200px;
+
+	/* ==========================================
+	   Blog
+	========================================== */
+	#blog .top {
+		width: 100%;
+		height: 60px;
 	}
-	#about .area.rightArea {
-		width: calc(100% - 200px);
+	#blog .top .data,
+	#blog .top .cate {
+		width: 60px;
 	}
-	#about .rightArea .title {
-		margin-bottom: 10px;
-		padding: 5px 0;
-		text-align: left;
+	#blog .top .cate {
+		float: left;
+		background-color: transparent;
+	}
+	#blog .top .title {
+		float: left;
+		width: calc(100% - 120px);
+		height: 60px;
+		clear: none;
 	}
 
 }

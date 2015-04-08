@@ -24,13 +24,13 @@
 	<link href="assets/css/common.css" rel="stylesheet">
 	<link href="assets/css/phones.css" rel="stylesheet">
 	<link href="assets/css/tablets.css" rel="stylesheet">
+	<link href="assets/css/desktops.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 	<script src="assets/js/plugins/html5shiv-3.7.2.min.js"></script>
 	<script src="assets/js/plugins/respond-1.4.2.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-
 <div class="pageWrap">
 	<div class="topArea clearGroup">
 	  <!-- Header -->
@@ -54,11 +54,6 @@
           </a>
         </li>
         <li>
-          <a href="#" title="履歷表">
-            <i class="fa fa-graduation-cap"></i><span>履歷表</span>
-          </a>
-        </li>
-        <li>
           <a href="#" title="作品集">
             <i class="fa fa-folder-open"></i><span>作品集</span>
           </a>
@@ -68,170 +63,199 @@
             <i class="fa fa-coffee"></i><span>隨手記</span>
           </a>
         </li>
-        <li>
-          <a href="#" title="聯絡我">
-            <i class="fa fa-envelope"></i><span>聯絡我</span>
-          </a>
-        </li>
       </ul>
     </nav>
 	</div>
 	<!-- Main -->
   <div id="mainWrap">
     <!-- 關於我 -->
-    <div id="about" class="paneBox">
-      <div class="clearGroup">
-        <div class="area leftArea">
-          <div class="author"><img src="assets/images/author.png" height="150" width="150" alt=""></div>
-        </div>
-        <div class="area rightArea">
+    <div class="paneBox">
+      <div id="about" class="clearGroup">
+
+        <!-- Author -->
+        <div class="authorArea"><img src="assets/images/author.png" alt="鄭于庭"></div>
+        <!-- Author End -->
+
+        <!-- Comment -->
+        <div class="commentArea">
           <div class="title">你好，我是鄭于庭！</div>
           <div class="notice">
             從事網頁前端設計工作已有4年以上的經驗，非常熱愛HTML、CSS與jQuery，對於前端技術的研究都積極學習。<br><br>
             網站設計的美感已累積相當多經驗，也有程式語言的基礎概念，在專案中能與他人合作並良好溝通，成為視覺設計師與後端工程師中間的橋樑。
           </div>
         </div>
-      </div>
-      <div class="gap"></div>
-      <div class="leftArea">
-        <div class="subjectBar">
-          <div class="icon"><i class="fa fa-book"></i></div>
-          <div class="txt">個人資料</div>
+        <!-- Comment End -->
+
+        <div class="clearBoth"></div>
+        <div class="gap xs-hide"></div>
+
+        <!-- Profile -->
+        <div class="profileArea">
+          <div class="subjectBar">
+            <div class="icon"><i class="fa fa-book"></i></div>
+            <div class="txt">個人資料</div>
+          </div>
+          <table class="tabSet">
+            <tr>
+              <th>姓名</th>
+              <td>鄭于庭</td>
+            </tr>
+            <tr>
+              <th>生日</th>
+              <td>1986/12/06</td>
+            </tr>
+            <tr>
+              <th>現居</th>
+              <td>台中市大甲區</td>
+            </tr>
+            <tr>
+              <th>手機</th>
+              <td>0989730432</td>
+            </tr>
+            <tr>
+              <th>信箱</th>
+              <td>fishtoyo@gmail.com</td>
+            </tr>
+            <tr>
+              <th>網站</th>
+              <td><a href="#" title="www.fishtoyo.com">www.fishtoyo.com</a></td>
+            </tr>
+          </table>
         </div>
-        <table class="tabSet tabIdentity">
-          <tr>
-            <th>姓名</th>
-            <td>鄭于庭</td>
-          </tr>
-          <tr>
-            <th>生日</th>
-            <td>1986/12/06</td>
-          </tr>
-          <tr>
-            <th>現居</th>
-            <td>台中市大甲區</td>
-          </tr>
-          <tr>
-            <th>手機</th>
-            <td>0989730432</td>
-          </tr>
-          <tr>
-            <th>信箱</th>
-            <td>fishtoyo@gmail.com</td>
-          </tr>
-          <tr>
-            <th>網站</th>
-            <td><a href="#" title="www.fishtoyo.com">www.fishtoyo.com</a></td>
-          </tr>
-        </table>
-      </div>
-      <div class="rightArea">
-        <div class="subjectBar">
-          <div class="icon"><i class="fa fa-diamond"></i></div>
-          <div class="txt">基礎技能</div>
+        <!-- Profile End -->
+
+        <!-- Base -->
+        <div class="baseArea">
+          <div class="subjectBar">
+            <div class="icon"><i class="fa fa-diamond"></i></div>
+            <div class="txt">基礎技能</div>
+          </div>
+          <ul class="ulSet">
+            <li><i class="fa fa-check"></i>PSD 版型製作成 HTML</li>
+            <li><i class="fa fa-check"></i>CSS 撰寫與設計</li>
+            <li><i class="fa fa-check"></i>RWD 自適應版型製作</li>
+            <li><i class="fa fa-check"></i>jQuery 效果撰寫、套件搭配</li>
+          </ul>
         </div>
-        <ul class="ulSet ulSkill">
-          <li><i class="fa fa-check"></i>PSD 切片製作成 HTML</li>
-          <li><i class="fa fa-check"></i>CSS 撰寫與設計</li>
-          <li><i class="fa fa-check"></i>RWD 自適應版型製作</li>
-          <li><i class="fa fa-check"></i>jQuery 效果撰寫、套件搭配</li>
-        </ul>
-      </div>
-      <div class="clearBoth"></div>
-      <div class="gap"></div>
-      <div class="subjectBar">
-        <div class="icon"><i class="fa fa-pie-chart"></i></div>
-        <div class="txt">負責專案</div>
-      </div>
-      <ul class="ulSet ulCases">
-        <li>
-          <span><i class="fa fa-star fa-fw"></span></i>
-          <strong>130</strong> 件 / <strong>40</strong> 個月
-        </li>
-        <li>
-          <span><i class="fa fa-shopping-cart fa-fw"></i></span>
-          <strong>30</strong> 件購物
-        </li>
-        <li>
-          <span><i class="fa fa-camera-retro fa-fw"></i></span>
-          <strong>30</strong> 件形象
-        </li>
-        <li>
-          <span><i class="fa fa-users fa-fw"></i></span>
-          <strong>30</strong> 件企業
-        </li>
-      </ul>
-    </div>
-    <!-- 履歷表 -->
-    <div id="resume" class="paneBox">
-  <div class="leftArea">
-    <div class="subjectBar">
-      <div class="icon"><i class="fa fa-magic"></i></div>
-      <div class="txt">工作與學歷</div>
-    </div>
-    <div class="boxArea">
-      <div class="year">2010</div>
-      <div class="title">網頁設計師</div>
-      <div class="company">鉅潞科技有限公司</div>
-      <div class="txt">
-        畢業後即任職於此公司，至今已將近四年半的時間，主要負責切版與效果研究。在職期間也持續進修，主動參加Android APP程式開發與實用英文等課程。
-      </div>
-    </div>
-    <div class="boxArea">
-      <div class="year">2006</div>
-      <div class="title">資訊管理系學士</div>
-      <div class="company">崑山科技大學</div>
-      <div class="txt">
-        在學期間皆以網頁相關為主要學習目標，曾參與校內教師評量問卷的網站建置，主要負責網站設計、建置與SQL資料庫。課餘時間也參與社團活動，曾擔任撞球社的副社長一職，協助維持社團運作及開發活動流程、舉辦比賽等。
-      </div>
-    </div>
-  </div>
-  <div class="gap"></div>
-  <div class="rightArea">
-    <div class="subjectBar">
-      <div class="icon"><i class="fa fa-code"></i></div>
-      <div class="txt">專業技能</div>
-    </div>
-    <div class="skillArea">
-      <div class="skillBar">
-        <div class="title">HTML&amp;CSS</div>
-        <div class="barLine">
-          <div class="line w95"><span class="num">95%</span></div>
+        <!-- Base End -->
+
+        <div class="clearBoth"></div>
+        <div class="gap xs-hide"></div>
+
+        <!-- History -->
+        <div class="historyArea">
+          <div class="subjectBar">
+            <div class="icon"><i class="fa fa-magic"></i></div>
+            <div class="txt">工作與學歷</div>
+          </div>
+          <div class="boxArea">
+            <div class="year">2010</div>
+            <div class="title">網頁設計師</div>
+            <div class="company">鉅潞科技有限公司</div>
+            <div class="txt">
+              畢業後即任職於此公司，至今已將近四年半的時間，主要負責切版與效果研究。在職期間也持續進修，主動參加Android APP程式開發與實用英文等課程。
+            </div>
+          </div>
+          <div class="boxArea">
+            <div class="year">2006</div>
+            <div class="title">資訊管理系學士</div>
+            <div class="company">崑山科技大學</div>
+            <div class="txt">
+              在學期間皆以網頁相關為主要學習目標，曾參與校內教師評量問卷的網站建置，主要負責網站設計、建置與SQL資料庫。課餘時間也參與社團活動，曾擔任撞球社的副社長一職，協助維持社團運作及開發活動流程、舉辦比賽等。
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="skillBar">
-        <div class="title">jQuery</div>
-        <div class="barLine">
-          <div class="line w80"><span class="num">80%</span></div>
+        <!-- History End -->
+
+        <!-- Skill -->
+        <div class="skillArea">
+          <div class="subjectBar">
+            <div class="icon"><i class="fa fa-code"></i></div>
+            <div class="txt"></div>
+          </div>
+          <div class="skillItem">
+            <div class="skillBar">
+              <div class="title">HTML&amp;CSS</div>
+              <div class="barLine">
+                <div class="line w95"><span class="num">95%</span></div>
+              </div>
+            </div>
+            <div class="skillBar">
+              <div class="title">jQuery</div>
+              <div class="barLine">
+                <div class="line w80"><span class="num">80%</span></div>
+              </div>
+            </div>
+            <div class="skillBar">
+              <div class="title">Photoshop</div>
+              <div class="barLine">
+                <div class="line w95"><span class="num">95%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="subjectBar lang">
+            <div class="icon"><i class="fa fa-globe"></i></div>
+            <div class="txt">語言能力</div>
+          </div>
+          <div class="skillItem">
+            <div class="skillBar">
+              <div class="title">中文</div>
+              <div class="barLine">
+                <div class="line w95"><span class="num">95%</span></div>
+              </div>
+            </div>
+            <div class="skillBar">
+              <div class="title">English</div>
+              <div class="barLine">
+                <div class="line w80"><span class="num">80%</span></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="skillBar">
-        <div class="title">Photoshop</div>
-        <div class="barLine">
-          <div class="line w95"><span class="num">95%</span></div>
+        <!-- Skill & Lang End -->
+
+        <div class="clearBoth"></div>
+        <div class="gap xs-hide"></div>
+
+        <!-- Contact -->
+        <div class="contactArea">
+          <div class="subjectBar">
+            <div class="icon"><i class="fa fa-thumbs-o-up"></i></div>
+            <div class="txt">與我聯繫</div>
+          </div>
+          <form>
+            <div class="leftArea">
+              <div class="form-group">
+                <label for="FullnameForm">Fullname</label>
+                <input type="text" class="form-control" id="FullnameForm" placeholder="Enter Fullname">
+              </div>
+              <div class="form-group">
+                <label for="CompanyForm">Company</label>
+                <input type="text" class="form-control" id="CompanyForm" placeholder="Enter Company">
+              </div>
+            </div>
+            <div class="rightArea">
+              <div class="form-group">
+                <label for="EmailForm">Email Address</label>
+                <input type="email" class="form-control" id="EmailForm" placeholder="Enter Address">
+              </div>
+              <div class="form-group">
+                <label for="PhoneForm">Phone Number</label>
+                <input type="text" class="form-control" id="PhoneForm" placeholder="Enter Phone NUmber">
+              </div>
+            </div>
+            <div class="clearBoth"></div>
+            <div class="form-group">
+              <label for="MesageForm">Message</label>
+              <textarea class="form-control" rows="8" id="MesageForm" placeholder="Enter Message"></textarea>
+            </div>
+            <button type="submit" class="btn animate"><span><i class="fa fa-paper-plane"></i> 送出表單</span></button>
+          </form>
         </div>
-      </div>
-      <div class="skillBar">
-        <div class="title">PHP&amp;MYSQL</div>
-        <div class="barLine">
-          <div class="line w25"><span class="num">25%</span></div>
-        </div>
+
       </div>
     </div>
-    <div class="subjectBar">
-      <div class="icon"><i class="fa fa-globe"></i></div>
-      <div class="txt">語言能力</div>
-    </div>
-    <div class="langArea">
-      <div class="langBar">
-        <ul class="ulSet ulSkill">
-          <li>中文 / <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
-          <li>英文 / <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+
     <!-- 作品集 -->
     <div id="work" class="paneBox">
   <div class="subjectBar">
@@ -259,72 +283,42 @@
 </div>
     <!-- 隨手記 -->
     <div id="blog" class="paneBox">
-  <div class="subjectBar">
-    <div class="icon"><i class="fa fa-comments-o"></i></div>
-    <div class="txt">記事分享</div>
-  </div>
-  <!-- 01 -->
- 	<div class="article">
- 		<div class="top">
-	 		<div class="data"><strong>16</strong><span>Dec'15</span></div>
-	 		<div class="cate"><i class="fa fa-video-camera"></i></div>
-	 		<div class="title"><a href="blog/view.html" title="">An Example post with a video</a></div>
- 		</div>
-		<div class="descMain">
-			<img src="http://fishtoyo.github.io/website/photos/images/39.jpg" alt="">
-			voluptatem odit ex pariatur pariatur atque consequuntur magnam vitae provident perferendis nihil consequatur sunt adipisci placeat fuga magnam molestiae nesciunt ratione sint fuga doloribus labore similique minus facilis iusto incidunt doloremque qui in
+		  <div class="subjectBar">
+		    <div class="icon"><i class="fa fa-comments-o"></i></div>
+		    <div class="txt">記事分享</div>
+		  </div>
+		  <!-- 01 -->
+		 	<div class="article">
+		 		<div class="top">
+			 		<div class="data"><strong>16</strong><span>Dec'15</span></div>
+			 		<div class="cate"><i class="fa fa-video-camera"></i></div>
+			 		<div class="title"><a href="blog/view.html" title="">An Example post with a video</a></div>
+		 		</div>
+				<div class="descMain">
+					<img src="http://fishtoyo.github.io/website/photos/images/39.jpg" alt="">
+					illo sit accusantium sunt id distinctio delectus ut soluta deserunt velit non voluptas quia eos ex ipsa dicta quia et autem quibusdam itaque distinctio nisi delectus nemo hic maxime sed dolorem velit vero est non enim
+				</div>
+				<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
+		 	</div>
+		  <div class="gap"></div>
+		  <!-- 01 End -->
+		  <!-- 02 -->
+		 	<div class="article">
+		 		<div class="top">
+			 		<div class="data"><strong>16</strong><span>MAR'15</span></div>
+			 		<div class="cate"><i class="fa fa-code"></i></div>
+			 		<div class="title"><a href="#" title="">Vero asperiores deserunt iusto doloremqueo</a></div>
+		 		</div>
+				<div class="descMain">
+					<img src="http://fishtoyo.github.io/website/photos/images/150.jpg" alt="">
+					reiciendis pariatur consectetur vero et tenetur sed beatae nesciunt natus aut autem laboriosam alias voluptates veritatis similique necessitatibus perferendis magni aut consequatur vel dolores rerum praesentium officia maiores quis enim dicta voluptas dignissimos sed sint impedit et unde consequatur hic asperiores numquam quod dolorem et doloribus omnis voluptas nihil autem ex
+				</div>
+				<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
+		 	</div>
+		  <div class="gap"></div>
+		  <!-- 02 End -->
+		  <a href="#" title="更多記事分享..." class="more view"><span>更多記事分享 <i class="fa fa-angle-double-down"></i></span></a>
 		</div>
-		<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
- 	</div>
-  <div class="gap"></div>
-  <!-- 01 End -->
-  <!-- 02 -->
- 	<div class="article">
- 		<div class="top">
-	 		<div class="data"><strong>16</strong><span>MAR'15</span></div>
-	 		<div class="cate"><i class="fa fa-code"></i></div>
-	 		<div class="title"><a href="#" title="">Vero asperiores deserunt iusto doloremqueo</a></div>
- 		</div>
-		<div class="descMain">
-			<img src="http://fishtoyo.github.io/website/photos/images/150.jpg" alt="">
-			cumque voluptatem aut natus esse aspernatur qui eius molestias quia delectus illum inventore expedita minima debitis et accusamus quisquam et maiores velit id ut qui placeat dolor itaque eum totam vero aut reprehenderit voluptatem quae at sit quo quaerat similique adipisci nam perferendis quas accusantium ut debitis non enim voluptatem nemo illum
-		</div>
-		<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
- 	</div>
-  <div class="gap"></div>
-  <!-- 02 End -->
-  <a href="#" title="更多記事分享..." class="more view"><span>更多記事分享 <i class="fa fa-angle-double-down"></i></span></a>
-</div>
-    <!-- 聯絡我 -->
-    <div id="contact" class="paneBox">
-  <div class="subjectBar">
-    <div class="icon"><i class="fa fa-thumbs-o-up"></i></div>
-    <div class="txt">與我聯繫</div>
-  </div>
-  <form>
-    <div class="form-group">
-      <label for="FullnameForm">Fullname</label>
-      <input type="text" class="form-control" id="FullnameForm" placeholder="Enter Fullname">
-    </div>
-    <div class="form-group">
-      <label for="CompanyForm">Company</label>
-      <input type="text" class="form-control" id="CompanyForm" placeholder="Enter Company">
-    </div>
-    <div class="form-group">
-      <label for="EmailForm">Email Address</label>
-      <input type="email" class="form-control" id="EmailForm" placeholder="Enter Address">
-    </div>
-    <div class="form-group">
-      <label for="PhoneForm">Phone Number</label>
-      <input type="text" class="form-control" id="PhoneForm" placeholder="Enter Phone NUmber">
-    </div>
-    <div class="form-group">
-      <label for="MesageForm">Message</label>
-      <textarea class="form-control" rows="8" id="MesageForm" placeholder="Enter Message"></textarea>
-    </div>
-    <button type="submit" class="btn animate"><span><i class="fa fa-paper-plane"></i> 送出表單</span></button>
-  </form>
-</div>
   </div>
   <!-- Footer -->
   <footer id="footer">

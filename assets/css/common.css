@@ -1,7 +1,7 @@
 ﻿@charset "utf-8";
 /* ==========================================
- * @ Author   Fish
- * @ Website  http://www.urmemo.com
+ * @ Author	 Fish
+ * @ Resume	 http://fishtoyo.github.io/resume/
 ========================================== */
 
 
@@ -11,7 +11,7 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	min-height: 100%;
 	color: #888;
 	font-size: 14px;
 	background-color: #426580;
@@ -110,6 +110,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 ========================================== */
 .pageWrap {
 	position: relative;
+	min-height: 100%;
 	overflow: hidden;
 	background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
@@ -125,6 +126,9 @@ div, span, a, p, input, label, textarea, img, ul, li {
 }
 #mainWrap {
 	padding: 0 10px;
+}
+.xs-hide {
+	display: none;
 }
 
 
@@ -167,15 +171,12 @@ div, span, a, p, input, label, textarea, img, ul, li {
 /* ==========================================
    Nav
 ========================================== */
-#nav {
-	height: 40px;
-}
 #nav ul {
 	width: 100%;
 }
 #nav li {
 	float: left;
-	width: 20%;
+	width: 33.3%;
 }
 #nav li a {
 	position: relative;
@@ -186,6 +187,11 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	line-height: 30px;
 	text-align: center;
 	text-decoration: none;
+	background-color: #7ab6c5;
+	border-left: 1px solid #29a8c5;
+}
+#nav li:first-child a {
+	border: none;
 }
 #nav li a:before,
 #nav li a:after {
@@ -206,13 +212,6 @@ div, span, a, p, input, label, textarea, img, ul, li {
 #nav li a span {
 	display: none;
 	font-size: 14px;
-}
-/* BackgroundColor */
-#nav li:nth-child(even) a {
-	background-color: #29a8c5;
-}
-#nav li:nth-child(odd) a {
-	background-color: #7ab6c5;
 }
 /* Current */
 #nav li a.current {
@@ -260,14 +259,16 @@ div, span, a, p, input, label, textarea, img, ul, li {
 /* ==========================================
    About
 ========================================== */
-#about .area {
+.authorArea,
+.commentArea {
 	padding: 0 0 10px;
+}
+/* Author */
+.authorArea {
+	padding-top: 30px;
 	text-align: center;
 }
-#about .area.leftArea {
-	padding-top: 30px;
-}
-#about .leftArea img {
+.authorArea img {
 	margin: 0 auto;
 	width: 150px;
 	height: 150px;
@@ -276,70 +277,67 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	   -moz-border-radius: 75px;
 	        border-radius: 75px;
 }
-#about .rightArea .title {
+/* Comment */
+.commentArea .title {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 	font-size: 18px;
 	border-bottom: 1px solid #e2e2e2;
 }
-#about .rightArea .notice {
+.commentArea .notice {
 	margin: 0 auto;
 	font-size: 15px;
 	text-align: left;
 }
-#about .tabIdentity {
+/* Profile */
+.profileArea table {
 	width: 100%;
 	font-size: 15px;
 	line-height: 30px;
 }
-#about .tabIdentity th {
+.profileArea  th {
 	position: relative;
 	padding-left: 5px;
 	text-align: left;
 	white-space: nowrap;
 }
-#about .tabIdentity th:after {
+.profileArea  th:after {
 	pointer-events: none;
 	content: '：';
 }
-#about .tabIdentity td {
+.profileArea  td {
 	width: 100%;
 }
-#about .ulCases li {
-	margin-bottom: 8px;
-	font-size: 15px;
-	text-align: left;
-}
-#about .ulCases li span {
-	display: inline-block;
-	margin: 0 10px 0 2px;
-	width: 36px;
-	height: 36px;
-	line-height: 38px;
-	text-align: center;
-	background-color: #e4e4e4;
-
-	-webkit-border-radius: 18px;
-	   -moz-border-radius: 18px;
-	        border-radius: 18px;
-}
-#about .ulCases .fa {
+/* Base */
+.baseArea ul {
 	color: #fff;
-	font-size: 1.3em;
 }
-#about .ulCases strong {
-	font-size: 1.3em;
-	font-weight: normal;
+.baseArea li {
+	margin-bottom: 5px;
+	padding: 0 10px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
 }
-
-
-/* ==========================================
-   Resume
-========================================== */
-#resume .boxArea {
+.baseArea li:nth-child(2n+1) {
+	background-color: #557a83;
+}
+.baseArea li:nth-child(2n+2) {
+	background-color: #c25858;
+}
+.baseArea li .fa {
+	margin-right: 8px;
+	font-size: 1.15em;
+}
+/* History */
+.historyArea .boxArea {
 	position: relative;
-	margin-top: 40px;
-	padding: 40px 15px 15px;
+	margin: 50px 0 30px;
+	padding: 25px 15px 15px;
 	color: #888;
 	background-color: #fff;
 	border: solid 3px #557a83;
@@ -348,7 +346,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
-#resume .boxArea .year {
+.historyArea .boxArea .year {
 	position: absolute;
 	top: -35px;
 	left: 50%;
@@ -367,9 +365,8 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
-#resume .boxArea:last-child .year {
+.historyArea .boxArea:last-child .year {
 	content: '2006';
-
 	top: -31px;
 	margin: 0 0 0 -33px;
 	width: 56px;
@@ -377,33 +374,33 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	line-height: 48px;
 	background-color: #6eaebe;
 }
-#resume .boxArea:last-child {
+.historyArea .boxArea:last-child {
 	border-color: #e5e5e5;
 }
-#resume .boxArea .title {
+.historyArea .boxArea .title {
 	font-size: 15px;
 	line-height: 26px;
 }
-#resume .boxArea .company {
+.historyArea .boxArea .company {
 	color: #6eaebf;
 	font-size: 15px;
 }
-#resume .boxArea .txt {
+.historyArea .boxArea .txt {
 	padding: 8px 0 0;
 	line-height: 18px;
 }
-#resume .skillArea,
-#resume .langArea {
+/* Skill */
+.skillArea {
 	padding-bottom: 10px;
 }
-#resume .skillBar {
+.skillBar {
 	padding: 10px 0;
 }
-#resume .skillBar .title {
+.skillBar .title {
 	padding: 0 0 5px;
 	font-size: 16px;
 }
-#resume .skillBar .barLine {
+.skillBar .barLine {
 	height: 10px;
 	background-color: #f6f6f6;
 
@@ -411,7 +408,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	   -moz-border-radius: 5px;
 	        border-radius: 5px;
 }
-#resume .skillBar .line {
+.skillBar .line {
 	position: relative;
 	height: 100%;
 	background-color: #6faebe;
@@ -420,7 +417,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-#resume .skillBar .line:before {
+.skillBar .line:before {
 	pointer-events: none;
 	content: '';
 
@@ -433,7 +430,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	border-width: 0 5px 5px 5px;
 	border-color: transparent transparent #dd5958 transparent;
 }
-#resume .skillBar .num {
+.skillBar .num {
 	position: absolute;
 	bottom: -29px;
 	right: -12px;
@@ -448,33 +445,97 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	   -moz-border-radius: 4px;
 	        border-radius: 4px;
 }
-#resume .skillBar:nth-child(even) .line {
+.skillBar:nth-child(even) .line {
 	background-color: #557a83;
 }
-#resume .skillBar .w25 {
+.skillBar .w25 {
 	width: 25%;
 }
-#resume .skillBar .w60 {
+.skillBar .w60 {
 	width: 60%;
 }
-#resume .skillBar .w80 {
+.skillBar .w80 {
 	width: 80%;
 }
-#resume .skillBar .w95 {
+.skillBar .w95 {
 	width: 95%;
 }
-#resume .langArea {
-
+/* Contact */
+.contactArea .form-group {
+	margin: 25px 0 10px;
 }
-#resume .langBar {
-	padding: 10px 0;
+.contactArea .form-group label {
+	display: block;
+	margin-bottom: 5px;
+	color: #7f7f7f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
 }
-#resume .langArea .title {
-	padding: 0 0 5px;
-	font-size: 16px;
+.contactArea .form-control {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  height: 34px;
+  min-height: 50px;
+  color: #555;
+  font-size: 13px;
+  outline: none;
+  background-color: #fff;
+  border: 3px solid #e1e1e1;
+  border-radius: 4px;
+     box-shadow: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
-#resume .langArea .barLine {
-	background-color: red;
+.contactArea .form-control:focus {
+  box-shadow: none;
+  border: 3px solid #63A4B5;
+}
+.contactArea textarea.form-control {
+	height: auto;
+}
+.contactArea .btn {
+	position: relative;
+	margin-top: 15px;
+	padding: 0;
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+}
+.contactArea .btn span {
+	position: relative;
+	display: block;
+	padding: 0 20px;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 42px;
+	background-color: #c25858;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 1;
+}
+.contactArea .btn:before {
+	pointer-events: auto;
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #b04140;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 0;
+}
+.contactArea .btn:hover span {
+	top: 3px;
 }
 
 
@@ -561,7 +622,6 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	font-size: 30px;
 }
 #blog .top .title {
-	float: none;
 	padding: 20px 0 0;
 	line-height: 24px;
 	clear: both;
@@ -632,93 +692,10 @@ div, span, a, p, input, label, textarea, img, ul, li {
 
 
 /* ==========================================
-   Contact
-========================================== */
-#contact .form-group {
-	margin: 25px 0 10px;
-}
-#contact .form-group label {
-	display: block;
-	margin-bottom: 5px;
-	color: #7f7f7f;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-}
-#contact .form-control {
-  display: block;
-  padding: 10px;
-  width: 100%;
-  height: 34px;
-  min-height: 50px;
-  color: #555;
-  font-size: 13px;
-  outline: none;
-  background-color: #fff;
-  border: 3px solid #e1e1e1;
-  border-radius: 4px;
-     box-shadow: none;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-          transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-#contact .form-control:focus {
-  box-shadow: none;
-  border: 3px solid #63A4B5;
-}
-#contact textarea.form-control {
-	height: auto;
-}
-#contact .btn {
-	position: relative;
-	margin-top: 15px;
-	padding: 0;
-	display: inline-block;
-	border: none;
-	background-color: transparent;
-}
-#contact .btn span {
-	position: relative;
-	display: block;
-	padding: 0 20px;
-	width: 100%;
-	height: 40px;
-	color: #fff;
-	font-size: 14px;
-	line-height: 42px;
-	background-color: #c25858;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	z-index: 1;
-}
-#contact .btn:before {
-	pointer-events: auto;
-	content: '';
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #b04140;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	z-index: 0;
-}
-#contact .btn:hover span {
-	top: 3px;
-}
-
-
-
-/* ==========================================
    Share Style
 ========================================== */
 /* Gap */
 .gap {
-	display: none;
 	margin: 15px 0;
 	width: 100%;
 	height: 1px;
@@ -749,33 +726,6 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	margin-left: 10px;
 	color: #8a8a8a;
 	font-size: 1.571em;
-}
-
-
-/* Skill */
-.ulSkill {
-	color: #fff;
-}
-.ulSkill li {
-	margin-bottom: 5px;
-	padding: 0 10px;
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-	        border-radius: 5px;
-}
-.ulSkill li:nth-child(2n+1) {
-	background-color: #557a83;
-}
-.ulSkill li:nth-child(2n+2) {
-	background-color: #c25858;
-}
-.ulSkill .fa {
-	margin-right: 8px;
-	font-size: 1.15em;
 }
 
 

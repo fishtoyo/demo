@@ -1,0 +1,81 @@
+﻿@charset "utf-8";
+
+/* ==========================================
+	 Medium Devices Desktop
+========================================== */
+@media screen and (min-width: 992px) {
+
+	/* ==========================================
+	   Page
+	========================================== */
+	.pageWrap {
+		margin: 0 auto;
+		width: 990px;
+	}
+
+	/* ==========================================
+	   Share Style
+	========================================== */
+	#header {
+		width: 350px;
+		height: 90px;
+	}
+	#header .author {
+		padding: 10px 0 0 15px;
+	}
+	#header .author img {
+		width: 70px;
+		height: 70px;
+	}
+	#header h1,
+	#header h2 {
+		float: left;
+		margin-top: 25px;
+		line-height: 24px;
+	}
+	#header h2 {
+		position: relative;
+		margin-top: 22px;
+		padding: 0 0 0 20px;
+		line-height: 30px;
+	}
+	#header h2:before {
+		pointer-events: none;
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: 10px;
+		width: 1px;
+		height: 18px;
+		background-color: #fff;
+	}
+
+	/* ==========================================
+	   Nav
+	========================================== */
+	#nav {
+		float: right;
+		width: calc(100% - 450px);
+	}
+	#nav li a {
+		padding-top: 20px;
+		height: 90px;
+	}
+	#nav li a span {
+		line-height: 24px;
+	}
+	/* Current */
+	#nav li a.current {
+		padding-top: 18px;
+		line-height: 24px;
+	}
+	#nav li a.current .fa {
+		font-size: 30px;
+	}
+	#nav li a.current span {
+		line-height: 36px;
+	}
+
+
+}
+/*
