@@ -43,22 +43,32 @@
 	/* ==========================================
 	   About
 	========================================== */
+	.authorArea {
+		float: left;
+		width: 200px;
+	}
+	.commentArea {
+		float: right;
+		padding: 25px 0 5px;
+	}
 	/* Comment */
 	.commentArea {
-		padding-bottom: 0;
+		width: calc(100% - 200px);
 	}
 	.commentArea .title {
-		text-align: center;
+		margin-bottom: 10px;
+		padding: 5px 0;
+		text-align: left;
 	}
-	/* Contact */
-	.contactArea .leftArea,
-	.contactArea .rightArea {
+	/* All Area Position */
+	.profileArea,
+	.baseArea,
+	.skillArea,
+	.historyArea .item {
+		float: left;
 		width: calc(50% - 10px);
 	}
-	.contactArea .leftArea {
-		float: left;
-	}
-	.contactArea .rightArea {
+	.baseArea, .skillArea.lang, .historyArea .right {
 		float: right;
 	}
 

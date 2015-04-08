@@ -282,6 +282,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 	font-size: 18px;
+	text-align: center;
 	border-bottom: 1px solid #e2e2e2;
 }
 .commentArea .notice {
@@ -365,7 +366,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
-.historyArea .boxArea:last-child .year {
+.historyArea .item.right .boxArea .year {
 	content: '2006';
 	top: -31px;
 	margin: 0 0 0 -33px;
@@ -374,7 +375,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 	line-height: 48px;
 	background-color: #6eaebe;
 }
-.historyArea .boxArea:last-child {
+.historyArea .item.right .boxArea {
 	border-color: #e5e5e5;
 }
 .historyArea .boxArea .title {
