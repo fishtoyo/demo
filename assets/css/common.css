@@ -176,7 +176,7 @@ div, span, a, p, input, label, textarea, img, ul, li {
 }
 #nav li {
 	float: left;
-	width: 33.3%;
+	width: 25%;
 }
 #nav li a {
 	position: relative;

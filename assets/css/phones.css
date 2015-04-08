@@ -46,7 +46,7 @@
 	/* ==========================================
 	   About
 	========================================== */
-	#about .subjectBar {
+	#about .subjectBar, .skillArea .subjectBar {
 		margin-top: 5px;
 	}
 	.authorArea {
@@ -68,20 +68,12 @@
 	}
 	/* All Area Position */
 	.profileArea,
-	.baseArea,
-	.skillArea,
-	.historyArea .item {
+	.baseArea {
 		float: left;
 		width: calc(50% - 10px);
 	}
-	.baseArea, .skillArea.lang, .historyArea .right {
+	.baseArea {
 		float: right;
-	}
-	.skillArea {
-		padding-bottom: 15px;
-	}
-	.historyArea .boxArea {
-		margin: 35px 0 5px;
 	}
 
 	/* ==========================================

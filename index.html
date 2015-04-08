@@ -10,24 +10,24 @@
 	<meta name="description" content="Fishtoyo 分享網頁前端設計心得與效果教學">
 	<title>Fish's Site</title>
 	<!-- Favicon -->
-	<link href="favicon.ico" rel="icon">
-	<link href="favicon.ico" rel="shortcut icon">
-	<link href="apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="/favicon.ico" rel="icon">
+	<link href="/favicon.ico" rel="shortcut icon">
+	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
 	<!-- Plugins -->
-	<link href="assets/css/shCore.css" rel="stylesheet">
-	<link href="assets/css/shCoreRDark.css" rel="stylesheet">
+	<link href="/assets/css/shCore.css" rel="stylesheet">
+	<link href="/assets/css/shCoreRDark.css" rel="stylesheet">
 	<!-- Web Fonts -->
 	<link href="http://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
 	<!-- CSS Customization -->
-	<link href="assets/css/normalize.css" rel="stylesheet">
-	<link href="assets/css/common.css" rel="stylesheet">
-	<link href="assets/css/phones.css" rel="stylesheet">
-	<link href="assets/css/tablets.css" rel="stylesheet">
-	<link href="assets/css/desktops.css" rel="stylesheet">
+	<link href="/assets/css/normalize.css" rel="stylesheet">
+	<link href="/assets/css/common.css" rel="stylesheet">
+	<link href="/assets/css/phones.css" rel="stylesheet">
+	<link href="/assets/css/tablets.css" rel="stylesheet">
+	<link href="/assets/css/desktops.css" rel="stylesheet">
 	<!--[if lt IE 9]>
-	<script src="assets/js/plugins/html5shiv-3.7.2.min.js"></script>
-	<script src="assets/js/plugins/respond-1.4.2.min.js"></script>
+	<script src="/assets/js/plugins/html5shiv-3.7.2.min.js"></script>
+	<script src="/assets/js/plugins/respond-1.4.2.min.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -54,6 +54,11 @@
           </a>
         </li>
         <li>
+          <a href="#" title="履歷表">
+            <i class="fa fa-folder-open"></i><span>履歷表</span>
+          </a>
+        </li>
+        <li>
           <a href="#" title="作品集">
             <i class="fa fa-folder-open"></i><span>作品集</span>
           </a>
@@ -69,127 +74,77 @@
 	<!-- Main -->
   <div id="mainWrap">
     <!-- 關於我 -->
-    <div class="paneBox">
-      <div id="about" class="clearGroup">
+    <div id="about" class="paneBox clearGroup">
+      <!-- Author -->
+      <div class="authorArea"><img src="assets/images/author.png" alt="鄭于庭"></div>
+      <!-- Author End -->
 
-        <!-- Author -->
-        <div class="authorArea"><img src="assets/images/author.png" alt="鄭于庭"></div>
-        <!-- Author End -->
-
-        <!-- Comment -->
-        <div class="commentArea">
-          <div class="title">你好，我是鄭于庭！</div>
-          <div class="notice">
-            從事網頁前端設計工作已有4年以上的經驗，非常熱愛HTML、CSS與jQuery，對於前端技術的研究都積極學習。<br><br>
-            網站設計的美感已累積相當多經驗，也有程式語言的基礎概念，在專案中能與他人合作並良好溝通，成為視覺設計師與後端工程師中間的橋樑。
-          </div>
+      <!-- Comment -->
+      <div class="commentArea">
+        <div class="title">你好，我是鄭于庭！</div>
+        <div class="notice">
+          從事網頁前端設計工作已有4年以上的經驗，非常熱愛HTML、CSS與jQuery，對於前端技術的研究都積極學習。<br><br>
+          網站設計的美感已累積相當多經驗，也有程式語言的基礎概念，在專案中能與他人合作並良好溝通，成為視覺設計師與後端工程師中間的橋樑。
         </div>
-        <!-- Comment End -->
+      </div>
+      <!-- Comment End -->
 
-        <div class="clearBoth"></div>
-        <div class="gap xs-hide"></div>
+      <div class="clearBoth"></div>
+      <div class="gap xs-hide"></div>
 
-        <!-- Profile -->
-        <div class="profileArea">
-          <div class="subjectBar">
-            <div class="icon"><i class="fa fa-book"></i></div>
-            <div class="txt">個人資料</div>
-          </div>
-          <table class="tabSet">
-            <tr>
-              <th>姓名</th>
-              <td>鄭于庭</td>
-            </tr>
-            <tr>
-              <th>生日</th>
-              <td>1986/12/06</td>
-            </tr>
-            <tr>
-              <th>現居</th>
-              <td>台中市</td>
-            </tr>
-            <tr>
-              <th>手機</th>
-              <td>0989730432</td>
-            </tr>
-            <tr>
-              <th>信箱</th>
-              <td>fishtoyo@gmail.com</td>
-            </tr>
-            <tr>
-              <th>網站</th>
-              <td><a href="#" title="http://fishtoyo.github.io/website/">fishtoyo.github.io</a></td>
-            </tr>
-          </table>
+      <!-- Profile -->
+      <div class="profileArea">
+        <div class="subjectBar">
+          <div class="icon"><i class="fa fa-book"></i></div>
+          <div class="txt">個人資料</div>
         </div>
-        <!-- Profile End -->
+        <table class="tabSet">
+          <tr>
+            <th>姓名</th>
+            <td>鄭于庭</td>
+          </tr>
+          <tr>
+            <th>生日</th>
+            <td>1986/12/06</td>
+          </tr>
+          <tr>
+            <th>現居</th>
+            <td>台中市</td>
+          </tr>
+          <tr>
+            <th>手機</th>
+            <td>0989730432</td>
+          </tr>
+          <tr>
+            <th>信箱</th>
+            <td>fishtoyo@gmail.com</td>
+          </tr>
+          <tr>
+            <th>網站</th>
+            <td><a href="#" title="http://fishtoyo.github.io/website/">fishtoyo.github.io</a></td>
+          </tr>
+        </table>
+      </div>
+      <!-- Profile End -->
 
-        <!-- Base -->
-        <div class="baseArea">
-          <div class="subjectBar">
-            <div class="icon"><i class="fa fa-diamond"></i></div>
-            <div class="txt">基礎技能</div>
-          </div>
-          <ul class="ulSet">
-            <li><i class="fa fa-check"></i>PSD 版型製作成 HTML</li>
-            <li><i class="fa fa-check"></i>CSS 撰寫與設計</li>
-            <li><i class="fa fa-check"></i>RWD 自適應版型製作</li>
-            <li><i class="fa fa-check"></i>jQuery 套件搭配、效果撰寫</li>
-          </ul>
+      <!-- Base -->
+      <div class="baseArea">
+        <div class="subjectBar">
+          <div class="icon"><i class="fa fa-diamond"></i></div>
+          <div class="txt">基礎技能</div>
         </div>
-        <!-- Base End -->
+        <ul class="ulSet">
+          <li><i class="fa fa-check"></i>PSD 版型製作成 HTML</li>
+          <li><i class="fa fa-check"></i>CSS 撰寫與設計</li>
+          <li><i class="fa fa-check"></i>RWD 自適應版型製作</li>
+          <li><i class="fa fa-check"></i>jQuery 套件搭配、效果撰寫</li>
+        </ul>
+      </div>
+      <!-- Base End -->
+    </div>
 
-        <div class="clearBoth"></div>
-        <div class="gap xs-hide"></div>
-
-        <!-- Skill -->
-        <div class="skillArea">
-          <div class="subjectBar">
-            <div class="icon"><i class="fa fa-code"></i></div>
-            <div class="txt">撰寫能力</div>
-          </div>
-          <div class="skillItem">
-            <div class="skillBar">
-              <div class="title">HTML&amp;CSS</div>
-              <div class="barLine">
-                <div class="line w95"><span class="num">95%</span></div>
-              </div>
-            </div>
-            <div class="skillBar">
-              <div class="title">jQuery</div>
-              <div class="barLine">
-                <div class="line w80"><span class="num">80%</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Skill End -->
-
-        <!-- Lang -->
-        <div class="skillArea lang">
-          <div class="subjectBar">
-            <div class="icon"><i class="fa fa-globe"></i></div>
-            <div class="txt">語言能力</div>
-          </div>
-          <div class="skillItem">
-            <div class="skillBar">
-              <div class="title">Chinese</div>
-              <div class="barLine">
-                <div class="line w95"><span class="num">95%</span></div>
-              </div>
-            </div>
-            <div class="skillBar">
-              <div class="title">English</div>
-              <div class="barLine">
-                <div class="line w60"><span class="num">60%</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Skill -->
-
-        <div class="clearBoth"></div>
-        <div class="gap xs-hide"></div>
+    <!-- 履歷表 -->
+    <div class="paneBox clearGroup">
 
         <!-- History -->
         <div class="historyArea">
@@ -221,46 +176,57 @@
         </div>
         <!-- History End -->
 
-        <div class="clearBoth"></div>
-        <div class="gap xs-hide"></div>
+        <div class="clearBoth sm-hide"></div>
+        <div class="gap xs-hide sm-hide"></div>
 
-        <!-- Contact -->
-        <div class="contactArea">
-          <div class="subjectBar">
-            <div class="icon"><i class="fa fa-thumbs-o-up"></i></div>
-            <div class="txt">與我聯繫</div>
+        <div class="rightArea">
+          <!-- Skill -->
+          <div class="skillArea">
+            <div class="subjectBar">
+              <div class="icon"><i class="fa fa-code"></i></div>
+              <div class="txt">撰寫能力</div>
+            </div>
+            <div class="skillItem">
+              <div class="skillBar">
+                <div class="title">HTML&amp;CSS</div>
+                <div class="barLine">
+                  <div class="line w95"><span class="num">95%</span></div>
+                </div>
+              </div>
+              <div class="skillBar">
+                <div class="title">jQuery</div>
+                <div class="barLine">
+                  <div class="line w80"><span class="num">80%</span></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <form>
-            <div class="leftArea">
-              <div class="form-group">
-                <label for="FullnameForm">聯絡人</label>
-                <input type="text" class="form-control" id="FullnameForm" placeholder="Enter Name">
+          <!-- Skill End -->
+
+          <!-- Lang -->
+          <div class="skillArea lang">
+            <div class="subjectBar">
+              <div class="icon"><i class="fa fa-globe"></i></div>
+              <div class="txt">語言能力</div>
+            </div>
+            <div class="skillItem">
+              <div class="skillBar">
+                <div class="title">Chinese</div>
+                <div class="barLine">
+                  <div class="line w95"><span class="num">95%</span></div>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="CompanyForm">公司名稱</label>
-                <input type="text" class="form-control" id="CompanyForm" placeholder="Enter Company">
+              <div class="skillBar">
+                <div class="title">English</div>
+                <div class="barLine">
+                  <div class="line w60"><span class="num">60%</span></div>
+                </div>
               </div>
             </div>
-            <div class="rightArea">
-              <div class="form-group">
-                <label for="EmailForm">電子信箱</label>
-                <input type="email" class="form-control" id="EmailForm" placeholder="Enter Email Address">
-              </div>
-              <div class="form-group">
-                <label for="PhoneForm">聯絡電話</label>
-                <input type="text" class="form-control" id="PhoneForm" placeholder="Enter Phone Number">
-              </div>
-            </div>
-            <div class="clearBoth"></div>
-            <div class="form-group">
-              <label for="MesageForm">留下訊息</label>
-              <textarea class="form-control" rows="8" id="MesageForm" placeholder="Enter Message"></textarea>
-            </div>
-            <button type="submit" class="btn animate"><span><i class="fa fa-paper-plane"></i> 送出表單</span></button>
-          </form>
+          </div>
+          <!-- Skill -->
         </div>
 
-      </div>
     </div>
 
     <!-- 作品集 -->
@@ -303,7 +269,7 @@
 		 		</div>
 				<div class="descMain">
 					<img src="http://fishtoyo.github.io/website/photos/images/39.jpg" alt="">
-					consequatur officiis aspernatur fugiat magnam enim praesentium doloribus magnam deserunt at ipsa praesentium omnis suscipit laboriosam quia facilis dolores qui fugit harum unde eaque
+					enim non at porro provident alias aut voluptates animi iusto doloremque corporis perspiciatis dolorem fuga velit quia eos aut sit qui error et placeat facilis dolore aut ex mollitia aut velit itaque similique incidunt aut quo unde voluptatem eum sit quia nemo perferendis natus nesciunt vel quis sunt necessitatibus ut voluptas quae porro quas amet unde quis
 				</div>
 				<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
 		 	</div>
@@ -318,7 +284,7 @@
 		 		</div>
 				<div class="descMain">
 					<img src="http://fishtoyo.github.io/website/photos/images/150.jpg" alt="">
-					omnis qui minus facilis natus soluta sint et sint rerum
+					sed ut voluptas ut commodi omnis reprehenderit autem nam fugit veritatis quae placeat enim atque dolorum dolores amet suscipit sed voluptatum incidunt eveniet adipisci ullam quia non ut ut quia et aut nisi adipisci exercitationem voluptas doloremque vel animi distinctio quos dolorem perferendis necessitatibus atque omnis perferendis
 				</div>
 				<a href="#" title="繼續閱讀..." class="more animate"><span>繼續閱讀 <i class="fa fa-angle-double-right"></i></span></a>
 		 	</div>
@@ -335,20 +301,20 @@
 </div>
 
 <!--[if lt IE 9]>
-<script src="assets/js/plugins/jQuery/jquery-1.11.1.min.js"></script>
+<script src="/assets/js/plugins/jQuery/jquery-1.11.1.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script src="assets/js/plugins/jQuery/jquery-2.1.1.min.js"></script>
+<script src="/assets/js/plugins/jQuery/jquery-2.1.1.min.js"></script>
 <!--<![endif]-->
-<script src="assets/js/plugins/jQuery/jquery.mobile-1.4.4.custom.min.js"></script>
-<script src="assets/js/plugins/jQuery/jquery.tools-1.1.2.min.js"></script>
-<script src="assets/js/common.js"></script>
+<script src="/assets/js/plugins/jQuery/jquery.mobile-1.4.4.custom.min.js"></script>
+<script src="/assets/js/plugins/jQuery/jquery.tools-1.1.2.min.js"></script>
+<script src="/assets/js/common.js"></script>
 <!-- Plugins -->
-<script src="assets/js/plugins/jQuery/shCore.js"></script>
-<script src="assets/js/plugins/jQuery/shBrushJScript.js"></script><!-- JavaScript -->
-<script src="assets/js/plugins/jQuery/shBrushXml.js"></script><!-- HTML -->
-<script src="assets/js/plugins/jQuery/shBrushCss.js"></script><!-- CSS -->
-<script src="assets/js/plugins/jQuery/shBrushSass.js"></script><!-- SASS -->
+<script src="/assets/js/plugins/jQuery/shCore.js"></script>
+<script src="/assets/js/plugins/jQuery/shBrushJScript.js"></script><!-- JavaScript -->
+<script src="/assets/js/plugins/jQuery/shBrushXml.js"></script><!-- HTML -->
+<script src="/assets/js/plugins/jQuery/shBrushCss.js"></script><!-- CSS -->
+<script src="/assets/js/plugins/jQuery/shBrushSass.js"></script><!-- SASS -->
 <script>
 SyntaxHighlighter.all();
 $(document).ready(function() {

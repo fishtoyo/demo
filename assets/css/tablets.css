@@ -7,6 +7,9 @@
 	.xs-hide {
 		display: block;
 	}
+	.sm-hide {
+		display: none;
+	}
 
 	/* ==========================================
 	   Share Style
@@ -50,7 +53,7 @@
 	========================================== */
 	#nav {
 		float: right;
-		width: calc(100% - 450px);
+		width: calc(100% - 350px);
 	}
 	#nav li a {
 		padding-top: 20px;
@@ -101,6 +104,18 @@
 	}
 	.contactArea .rightArea {
 		float: right;
+	}
+	/* All Area Position */
+	.historyArea {
+		float: left;
+		width: calc(65% - 10px);
+	}
+	.rightArea {
+		float: right;
+		width: calc(35% - 10px);
+	}
+	.skillArea .subjectBar {
+		margin-top: 25px;
 	}
 
 }
